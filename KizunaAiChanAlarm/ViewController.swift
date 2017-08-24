@@ -108,6 +108,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
         catch{
         }
+        audioPlayer.volume = 2
         audioPlayer.play()
     }
 }
