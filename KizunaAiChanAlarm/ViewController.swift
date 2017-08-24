@@ -14,13 +14,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var setAlarmImageView: UIImageView!
     @IBOutlet weak var cancelImageView: UIImageView!
     
+    @IBAction func dataPickerAction(_ sender: UIDatePicker) {
+        // DPの値を成形
+        let format = DateFormatter()
+        format.dateFormat = "HH:mm"
+        // 一時的にDPの値を保持
+        tempTime = format.string(from: dataPicker.date)
+    }
+    
     var isWakeUp = false
+    
+    //時間を一時的に保存
+    var tempTime: String = "00:00"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //時間ごとにupdate()を呼び出すための設定
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         timer.fire()
+        
+        //gesture追加
+        let setAlarmGesture = UITapGestureRecognizer(target: self, action: #selector(self.setAlarm))
+        setAlarmImageView.addGestureRecognizer(setAlarmGesture)
+        let cancelGesture = UITapGestureRecognizer(target: self, action: #selector(self.cancel))
+        cancelImageView.addGestureRecognizer(cancelGesture)
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +81,16 @@ class ViewController: UIViewController {
         }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+    
+    //gesture関係
+    func setAlarm(){
+        // アラームをセット
+        setTimeLabel.text = tempTime
+        print("aaaa")
+    }
+    func cancel(){
+        
     }
 
 }
