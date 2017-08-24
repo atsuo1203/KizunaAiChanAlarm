@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var nowTimeLabel: UILabel!
 
+    @IBOutlet weak var setTimeLabel: UILabel!
+    @IBOutlet weak var dataPicker: UIDatePicker!
+    @IBOutlet weak var setAlarmImageView: UIImageView!
+    @IBOutlet weak var cancelImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
