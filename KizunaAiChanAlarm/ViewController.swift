@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var setTimeLabel: UILabel!
     @IBOutlet weak var dataPicker: UIDatePicker!
     @IBAction func dataPickerAction(_ sender: UIDatePicker) {
@@ -33,6 +34,9 @@ class ViewController: UIViewController {
     //時間を一時的に保存
     var tempTime: String = "00:00"
     
+    //サウンド関係
+    var audioPlayer : AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,6 +47,8 @@ class ViewController: UIViewController {
         //時間ごとにupdate()を呼び出すための設定
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         timer.fire()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,6 +77,7 @@ class ViewController: UIViewController {
     func ringAlarm(str: String) {
         // 現在時刻が設定時刻と一緒なら
         if str == setTimeLabel.text && !isWakeUp {
+            saisei()
             alert()
         }
     }
@@ -83,6 +90,25 @@ class ViewController: UIViewController {
         }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+    
+    // 声の再生メソッド
+    func saisei() {
+        
+        let fotResource = "default"
+        // 再生する音源のURLを生成
+        let soundFilePath : String = Bundle.main.path(forResource: fotResource, ofType: "m4a")!
+        let fileURL : URL = URL(fileURLWithPath: soundFilePath)
+        
+        do{
+            // AVAudioPlayerのインスタンス化
+            audioPlayer = try AVAudioPlayer(contentsOf: fileURL)
+            // AVAudioPlayerのデリゲートをセット
+            audioPlayer.delegate = self
+        }
+        catch{
+        }
+        audioPlayer.play()
     }
 }
 

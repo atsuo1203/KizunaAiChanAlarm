@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C07C8B7E1F4F896600D5AB66 /* default.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C07C8B7D1F4F896600D5AB66 /* default.m4a */; };
 		C0F84F441F4F540F00524848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F84F431F4F540F00524848 /* AppDelegate.swift */; };
 		C0F84F461F4F540F00524848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F84F451F4F540F00524848 /* ViewController.swift */; };
 		C0F84F491F4F540F00524848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F84F471F4F540F00524848 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C07C8B7D1F4F896600D5AB66 /* default.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.m4a; sourceTree = "<group>"; };
 		C0F84F401F4F540F00524848 /* KizunaAiChanAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KizunaAiChanAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F84F431F4F540F00524848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F84F451F4F540F00524848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		C0F84F421F4F540F00524848 /* KizunaAiChanAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				C07C8B7D1F4F896600D5AB66 /* default.m4a */,
 				C0F84F431F4F540F00524848 /* AppDelegate.swift */,
 				C0F84F451F4F540F00524848 /* ViewController.swift */,
 				C0F84F471F4F540F00524848 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07C8B7E1F4F896600D5AB66 /* default.m4a in Resources */,
 				C0F84F4E1F4F540F00524848 /* LaunchScreen.storyboard in Resources */,
 				C0F84F4B1F4F540F00524848 /* Assets.xcassets in Resources */,
 				C0F84F491F4F540F00524848 /* Main.storyboard in Resources */,

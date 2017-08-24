@@ -33,13 +33,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "aichan_120.png",
+      "filename" : "aichan120.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "aichan_180.png",
+      "filename" : "aichan180.png",
       "scale" : "3x"
     }
   ],
