@@ -86,7 +86,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.isWakeUp = true
         let alert = UIAlertController(title: "はいどーも！こんにちわ！", message: "バーチャルYouTuberの", preferredStyle: .alert)
         let action = UIAlertAction(title: "キズナアイです！", style: .default) { action in
-            print("はいどーも")
+            self.audioPlayer.stop()
         }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
