@@ -12,7 +12,7 @@
 今後は音声や動画などにしていきたい
 
 ### 通常
-![aichan_1](https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_1.png)
+<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_1.png" width="320px">
 
 ### 時間来た時
-![aichan_2](https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_2.png)
+<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_2.png" width="320px">
