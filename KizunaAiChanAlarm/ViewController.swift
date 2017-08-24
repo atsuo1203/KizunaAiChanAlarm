@@ -19,14 +19,16 @@ class ViewController: UIViewController {
         tempTime = format.string(from: dataPicker.date)
     }
     @IBAction func setAlarmButtonPushed(_ sender: UIButton) {
-        // アラームをセット
         setTimeLabel.text = tempTime
-        print("aaaa")
+        isWakeUp = false
     }
-    @IBAction func cancelButtonPushed(_ sender: UIButton) {
+    @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
+        setTimeLabel.text = defaultTime
+        isWakeUp = false
     }
     
     var isWakeUp = false
+    let defaultTime = "--:--"
     
     //時間を一時的に保存
     var tempTime: String = "00:00"
@@ -34,6 +36,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setTimeLabel.text = defaultTime
+        isWakeUp = false
         
         //時間ごとにupdate()を呼び出すための設定
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
@@ -72,9 +77,8 @@ class ViewController: UIViewController {
     
     func alert() {
         self.isWakeUp = true
-        print("isWakeup")
-        let alert = UIAlertController(title: "alert", message: "ring ding", preferredStyle: .alert)
-        let action = UIAlertAction(title: "時間です", style: .default) { action in
+        let alert = UIAlertController(title: "はいどーも！こんにちわ！", message: "バーチャルYouTuberの", preferredStyle: .alert)
+        let action = UIAlertAction(title: "キズナアイです！", style: .default) { action in
             print("はいどーも")
         }
         alert.addAction(action)
