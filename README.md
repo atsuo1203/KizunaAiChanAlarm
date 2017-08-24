@@ -7,9 +7,7 @@
 
 ## 機能
 
-セットした時間になると、通知が行く
-
-今後は音声や動画などにしていきたい
+セットした時間になると、キズナアイちゃんの声で起こしてくれる
 
 ### 通常
 <img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_1.png" width="320px">
