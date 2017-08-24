@@ -418,7 +418,7 @@
 				DEVELOPMENT_TEAM = Z793E54W8T;
 				INFOPLIST_FILE = KizunaAiChanAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cps.KizunaAiChanAlarm;
+				PRODUCT_BUNDLE_IDENTIFIER = cps.ARTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,7 +431,7 @@
 				DEVELOPMENT_TEAM = Z793E54W8T;
 				INFOPLIST_FILE = KizunaAiChanAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cps.KizunaAiChanAlarm;
+				PRODUCT_BUNDLE_IDENTIFIER = cps.ARTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,6 +514,7 @@
 				C0F84F6A1F4F540F00524848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0F84F6B1F4F540F00524848 /* Build configuration list for PBXNativeTarget "KizunaAiChanAlarmTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				C0F84F6D1F4F540F00524848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0F84F6E1F4F540F00524848 /* Build configuration list for PBXNativeTarget "KizunaAiChanAlarmUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				C0F84F701F4F540F00524848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
