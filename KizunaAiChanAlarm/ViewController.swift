@@ -31,9 +31,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     @IBAction func snoozeSwitchTaped(_ sender: UISwitch) {
         if sender.isOn {
-            print("on")
+            isSnooze = true
         } else {
-            print("off")
+            isSnooze = false
+        }
+    }
+    
+    var isSnooze = true {
+        didSet {
+            if isSnooze {
+                print(isSnooze)
+            } else {
+                print(isSnooze)
+            }
         }
     }
     var isWakeUp = false
