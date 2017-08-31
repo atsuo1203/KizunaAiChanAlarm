@@ -16,10 +16,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let format = DateFormatter()
         format.dateFormat = "HH:mm"
         setTimeLabel.text = format.string(from: dataPicker.date)
+        isAlartCalled = false
         isWakeUp = false
     }
     @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
         setTimeLabel.text = defaultTime
+        isAlartCalled = false
         isWakeUp = false
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
@@ -38,18 +40,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     //スヌーズをオンにしてるかどうか
-    var isSnooze = false {
-        didSet {
-            if isSnooze {
-                print(isSnooze)
-            } else {
-                print(isSnooze)
-            }
-        }
-    }
+    var isSnooze = true
     let snoozeTime = 5
     
-    //起きてるかどうか
+    //アラートが呼ばれたかどうか
+    var isAlartCalled = false
+    
+    //アラートのボタンを押した時、起きたとみなす
     var isWakeUp = false
     
     //最初に表示される時刻
@@ -63,6 +60,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         setTimeLabel.text = defaultTime
+        isAlartCalled = false
         isWakeUp = false
         
         //時間ごとにupdate()を呼び出すための設定
@@ -70,9 +68,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         timer.fire()
         
         dataPicker.datePickerMode = .time
-        
-        //デフォルトではオン
-        isSnooze = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,24 +88,25 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     //毎回ならす処理
     func update() {
-        let str = getNowTime()
-        ringAlarm(str: str)
+        let nowTime = getNowTime()
+        ringAlarm(nowTime: nowTime)
     }
     
     //Alarm鳴らすかどうか
-    func ringAlarm(str: String) {
+    func ringAlarm(nowTime: String) {
         // 現在時刻が設定時刻と一緒なら
-        if str == setTimeLabel.text && !isWakeUp {
+        if nowTime == setTimeLabel.text && !isAlartCalled {
             saisei(forResource: "default")
             alert()
         }
     }
     
     func alert() {
-        self.isWakeUp = true
+        self.isAlartCalled = true
         let alert = UIAlertController(title: "はいどーも！こんにちわ！", message: "バーチャルYouTuberの", preferredStyle: .alert)
         let action = UIAlertAction(title: "キズナアイです！", style: .default) { action in
             self.audioPlayer.stop()
+            self.isWakeUp = true
         }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
