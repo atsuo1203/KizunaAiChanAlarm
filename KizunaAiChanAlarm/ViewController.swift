@@ -18,11 +18,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         setTimeLabel.text = format.string(from: dataPicker.date)
         getSnoozeTime(nowTime: dataPicker.date, dateForMatter: format)
         resetAll()
+        isSetAlarm = true
     }
     @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
         setTimeLabel.text = defaultTime
         resetAll()
         saisei(forResource: "hayaoki")
+        isSetAlarm = false
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
         if sender.isOn {
@@ -39,6 +41,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
+    // アラームがセットされているかどうか
+    var isSetAlarm = false
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
     //~分後
@@ -68,6 +72,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         setTimeLabel.text = defaultTime
         resetAll()
         dataPicker.datePickerMode = .time
+        isSetAlarm = false
         
         //時間ごとにupdate()を呼び出すための設定
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
@@ -109,8 +114,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             alert()
         }
         //snooze機能 snooze時刻なおかつ起きてない時に起動
-        if nowTime == self.snoozeClock && !isWakeUp && !isSnoozeCalled {
-            saisei(forResource: "default")
+        if nowTime == self.snoozeClock && !isWakeUp && !isSnoozeCalled && isSetAlarm {
+            saisei(forResource: "snooze")
             isSnoozeCalled = true
         }
     }
@@ -150,6 +155,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         isAlartCalled = false
         isWakeUp = false
         isSnoozeCalled = false
+        isSetAlarm = false
     }
 }
 
