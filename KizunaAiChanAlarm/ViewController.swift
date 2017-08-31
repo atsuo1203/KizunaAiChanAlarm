@@ -16,13 +16,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let format = DateFormatter()
         format.dateFormat = "HH:mm"
         setTimeLabel.text = format.string(from: dataPicker.date)
-        isAlartCalled = false
-        isWakeUp = false
+        getSnoozeTime(nowTime: dataPicker.date, dateForMatter: format)
+        resetBool()
     }
     @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
         setTimeLabel.text = defaultTime
-        isAlartCalled = false
-        isWakeUp = false
+        resetBool()
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
         if sender.isOn {
@@ -42,9 +41,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
     //~分後
-    let snoozeTime = 3
+    let snoozeTime = 2
     //スヌーズの時刻 現在時刻 + snoozeTime
     var snoozeClock = "--:--"
+    //スヌーズが呼ばれたかどうか
+    var isSnoozeCalled = false
     
     //アラートが呼ばれたかどうか
     var isAlartCalled = false
@@ -62,15 +63,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //初期化
         setTimeLabel.text = defaultTime
-        isAlartCalled = false
-        isWakeUp = false
+        resetBool()
+        dataPicker.datePickerMode = .time
         
         //時間ごとにupdate()を呼び出すための設定
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         timer.fire()
-        
-        dataPicker.datePickerMode = .time
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,10 +85,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let format = DateFormatter()
         format.dateFormat = "HH:mm"
         let nowTimeStr = format.string(from: nowTime)
-        
-        //現在時刻からsnoozeTime分後の時刻を計算(このメソッド内では役目はない)
-        getSnoozeTime(nowTime: nowTime, dateForMatter: format)
-        
         // 成形した時刻を文字列として返す
         return nowTimeStr
     }
@@ -110,6 +106,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         if nowTime == setTimeLabel.text && !isAlartCalled {
             saisei(forResource: "default")
             alert()
+        }
+        //snooze機能 snooze時刻なおかつ起きてない時に起動
+        if nowTime == self.snoozeClock && !isWakeUp && !isSnoozeCalled {
+            saisei(forResource: "default")
+            isSnoozeCalled = true
         }
     }
     
@@ -140,6 +141,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
         audioPlayer.volume = 2
         audioPlayer.play()
+    }
+    
+    //判定のリセット
+    func resetBool(){
+        isAlartCalled = false
+        isWakeUp = false
+        isSnoozeCalled = false
     }
 }
 
