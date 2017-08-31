@@ -92,7 +92,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     func ringAlarm(str: String) {
         // 現在時刻が設定時刻と一緒なら
         if str == setTimeLabel.text && !isWakeUp {
-            saisei()
+            saisei(forResource: "default")
             alert()
         }
     }
@@ -108,11 +108,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     // 声の再生メソッド
-    func saisei() {
-        
-        let fotResource = "default"
+    func saisei(forResource: String) {
         // 再生する音源のURLを生成
-        let soundFilePath : String = Bundle.main.path(forResource: fotResource, ofType: "m4a")!
+        let soundFilePath : String = Bundle.main.path(forResource: forResource, ofType: "m4a")!
         let fileURL : URL = URL(fileURLWithPath: soundFilePath)
         
         do{
