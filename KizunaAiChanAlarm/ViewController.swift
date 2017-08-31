@@ -37,7 +37,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
-    var isSnooze = true {
+    //スヌーズをオンにしてるかどうか
+    var isSnooze = false {
         didSet {
             if isSnooze {
                 print(isSnooze)
@@ -46,7 +47,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
     }
+    let snoozeTime = 5
+    
+    //起きてるかどうか
     var isWakeUp = false
+    
+    //最初に表示される時刻
     let defaultTime = "--:--"
     
     //サウンド関係
@@ -64,6 +70,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         timer.fire()
         
         dataPicker.datePickerMode = .time
+        
+        //デフォルトではオン
+        isSnooze = true
     }
 
     override func didReceiveMemoryWarning() {
