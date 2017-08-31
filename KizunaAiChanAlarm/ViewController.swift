@@ -22,7 +22,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         setTimeLabel.text = defaultTime
         isWakeUp = false
     }
-    
+    @IBAction func modeSwitchTaped(_ sender: UISwitch) {
+        if sender.isOn {
+            print("on")
+        } else {
+            print("off")
+        }
+    }
+    @IBAction func snoozeSwitchTaped(_ sender: UISwitch) {
+        if sender.isOn {
+            print("on")
+        } else {
+            print("off")
+        }
+    }
     var isWakeUp = false
     let defaultTime = "--:--"
     

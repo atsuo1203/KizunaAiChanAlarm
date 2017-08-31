@@ -86,6 +86,9 @@
                                 <rect key="frame" x="306" y="493" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.96526104211807251" green="0.6116756796836853" blue="0.69054698944091797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="snoozeSwitchTaped:" destination="BYZ-38-t0r" eventType="valueChanged" id="Q5J-uS-vEX"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スヌーズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih1-3O-lji">
                                 <rect key="frame" x="295" y="464" width="70" height="21"/>
@@ -98,6 +101,9 @@
                                 <rect key="frame" x="306" y="380" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.96526104211807251" green="0.6116756796836853" blue="0.69054698944091797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="modeSwitchTaped:" destination="BYZ-38-t0r" eventType="valueChanged" id="chd-hn-q3N"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="モード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPn-dC-buq">
                                 <rect key="frame" x="295" y="351" width="70" height="21"/>
