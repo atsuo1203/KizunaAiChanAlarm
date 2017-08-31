@@ -40,7 +40,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         timer.fire()
         
-        
+        dataPicker.datePickerMode = .time
     }
 
     override func didReceiveMemoryWarning() {
