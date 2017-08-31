@@ -17,11 +17,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         format.dateFormat = "HH:mm"
         setTimeLabel.text = format.string(from: dataPicker.date)
         getSnoozeTime(nowTime: dataPicker.date, dateForMatter: format)
-        resetBool()
+        resetAll()
     }
     @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
         setTimeLabel.text = defaultTime
-        resetBool()
+        resetAll()
+        saisei(forResource: "hayaoki")
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
         if sender.isOn {
@@ -65,7 +66,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         //初期化
         setTimeLabel.text = defaultTime
-        resetBool()
+        resetAll()
         dataPicker.datePickerMode = .time
         
         //時間ごとにupdate()を呼び出すための設定
@@ -120,6 +121,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let action = UIAlertAction(title: "キズナアイです！", style: .default) { action in
             self.audioPlayer.stop()
             self.isWakeUp = true
+            self.saisei(forResource: "wakeUp")
         }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
@@ -144,7 +146,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     //判定のリセット
-    func resetBool(){
+    func resetAll(){
         isAlartCalled = false
         isWakeUp = false
         isSnoozeCalled = false
