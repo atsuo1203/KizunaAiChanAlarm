@@ -41,7 +41,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
-    let snoozeTime = 5
+    //~分後
+    let snoozeTime = 3
+    //スヌーズの時刻 現在時刻 + snoozeTime
+    var snoozeClock = "--:--"
     
     //アラートが呼ばれたかどうか
     var isAlartCalled = false
@@ -77,13 +80,22 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     func getNowTime()-> String {
         // 現在時刻を取得
-        let nowTime: NSDate = NSDate()
+        let nowTime: Date = Date()
         // 成形する
         let format = DateFormatter()
         format.dateFormat = "HH:mm"
-        let nowTimeStr = format.string(from: nowTime as Date)
+        let nowTimeStr = format.string(from: nowTime)
+        
+        //現在時刻からsnoozeTime分後の時刻を計算(このメソッド内では役目はない)
+        getSnoozeTime(nowTime: nowTime, dateForMatter: format)
+        
         // 成形した時刻を文字列として返す
         return nowTimeStr
+    }
+    
+    func getSnoozeTime(nowTime: Date, dateForMatter: DateFormatter) {
+        let clock = Date(timeInterval: TimeInterval(self.snoozeTime * 60), since: nowTime)
+        self.snoozeClock = dateForMatter.string(from: clock)
     }
     
     //毎回ならす処理
