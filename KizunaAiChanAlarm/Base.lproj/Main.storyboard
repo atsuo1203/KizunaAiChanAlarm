@@ -38,9 +38,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="525293764.12007099">
                                     <!--2017-08-24 18:56:04 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="dataPickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="8pN-Gr-cGp"/>
-                                </connections>
                             </datePicker>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button" translatesAutoresizingMaskIntoConstraints="NO" id="ezT-ho-vTv">
                                 <rect key="frame" x="231" y="605" width="128" height="42"/>

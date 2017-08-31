@@ -12,15 +12,10 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var setTimeLabel: UILabel!
     @IBOutlet weak var dataPicker: UIDatePicker!
-    @IBAction func dataPickerAction(_ sender: UIDatePicker) {
-        // DPの値を成形
+    @IBAction func setAlarmButtonPushed(_ sender: UIButton) {
         let format = DateFormatter()
         format.dateFormat = "HH:mm"
-        // 一時的にDPの値を保持
-        tempTime = format.string(from: dataPicker.date)
-    }
-    @IBAction func setAlarmButtonPushed(_ sender: UIButton) {
-        setTimeLabel.text = tempTime
+        setTimeLabel.text = format.string(from: dataPicker.date)
         isWakeUp = false
     }
     @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
@@ -30,9 +25,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var isWakeUp = false
     let defaultTime = "--:--"
-    
-    //時間を一時的に保存
-    var tempTime: String = "00:00"
     
     //サウンド関係
     var audioPlayer : AVAudioPlayer!
