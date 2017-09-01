@@ -10,7 +10,7 @@
 セットした時間になると、キズナアイちゃんの声で起こしてくれる
 
 ### 通常
-<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_1.png" width="320px">
+<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_3.png" width="320px">
 
 ### 時間来た時
-<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_2.png" width="320px">
+<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_4.png" width="320px">
