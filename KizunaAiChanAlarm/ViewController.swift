@@ -68,6 +68,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        UIDevice.current.isProximityMonitoringEnabled = true
+        
         //初期化
         setTimeLabel.text = defaultTime
         resetAll()
@@ -156,6 +158,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         isWakeUp = false
         isSnoozeCalled = false
         isSetAlarm = false
+    }
+    
+    //近接した時に呼ばれる
+    func proxitySensorStateChanged(){
+        if (UIDevice.current.proximityState == true)
+        {
+            print("近い！")
+        }
+        else
+        {
+            print("遠い")
+        }
     }
 }
 
