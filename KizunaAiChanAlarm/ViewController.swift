@@ -54,7 +54,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
     //~分後
-    let snoozeTime = [3,6,9]
+    let snoozeTime = [1,2]
     //スヌーズの時刻 現在時刻 + snoozeTime
     var snoozeClock = [""]
     
@@ -108,6 +108,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             let clock = Date(timeInterval: TimeInterval(time * 60), since: nowTime)
             self.snoozeClock.append(dateForMatter.string(from: clock))
         }
+        print(self.snoozeClock)
     }
     
     //毎回ならす処理
@@ -123,10 +124,31 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             saisei(forResource: "default")
             alert()
         }
+        //snoozeClockが一つもなくなった時に落ちないための対処
+        var clock = ""
+        if self.snoozeClock.count != 0 {
+            clock = self.snoozeClock[0]
+        } else {
+            clock = ""
+        }
+        print("self.snoozeClock.count 前")
+        print(self.snoozeClock.count)
+        print("clock")
+        print(clock)
         //snooze機能 snooze時刻なおかつ起きてない時に起動 snoozeTimeの個数分呼ばれる
-        if nowTime == self.snoozeClock[0] && !isWakeUp && isSetAlarm {
-            saisei(forResource: "snooze")
-            self.snoozeClock.remove(at: 0)
+        if nowTime == clock && !isWakeUp && isSetAlarm {
+            print("self.snoozeClock.count 中")
+            print(self.snoozeClock.count)
+            //最後だけ別音声鳴らしたい！
+            if self.snoozeClock.count == 1 {
+                saisei(forResource: "default")
+            } else {
+                saisei(forResource: "snooze")
+            }
+            self.snoozeClock.removeFirst()
+            clock = ""
+            print("self.snoozeClock.count 後")
+            print(self.snoozeClock.count)
         }
     }
     
