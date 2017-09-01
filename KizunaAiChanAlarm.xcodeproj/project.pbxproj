@@ -205,7 +205,7 @@
 				TargetAttributes = {
 					C0F84F3F1F4F540F00524848 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = Z793E54W8T;
+						DevelopmentTeam = 79N3F89EVZ;
 						ProvisioningStyle = Automatic;
 					};
 					C0F84F531F4F540F00524848 = {
@@ -431,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z793E54W8T;
+				DEVELOPMENT_TEAM = 79N3F89EVZ;
 				INFOPLIST_FILE = KizunaAiChanAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cps.ARTest;
@@ -444,7 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z793E54W8T;
+				DEVELOPMENT_TEAM = 79N3F89EVZ;
 				INFOPLIST_FILE = KizunaAiChanAlarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cps.ARTest;
