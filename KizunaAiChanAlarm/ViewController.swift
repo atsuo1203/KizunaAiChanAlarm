@@ -42,7 +42,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     // アラームがセットされているかどうか
-    var isSetAlarm = false
+    var isSetAlarm = false {
+        didSet {
+            UIDevice.current.isProximityMonitoringEnabled = isSetAlarm
+            UIApplication.shared.isIdleTimerDisabled = isSetAlarm
+        }
+    }
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
     //~分後
@@ -68,8 +73,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        UIDevice.current.isProximityMonitoringEnabled = true
-        UIApplication.shared.isIdleTimerDisabled = true
         
         //初期化
         setTimeLabel.text = defaultTime
