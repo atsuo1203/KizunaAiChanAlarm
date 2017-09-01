@@ -12,6 +12,9 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var setTimeLabel: UILabel!
     @IBOutlet weak var dataPicker: UIDatePicker!
+    @IBOutlet weak var aichanImageView: UIImageView!
+    @IBOutlet weak var videoPlayerView: AVPlayerView!
+
     @IBAction func setAlarmButtonPushed(_ sender: UIButton) {
         let format = DateFormatter()
         format.dateFormat = "HH:mm"

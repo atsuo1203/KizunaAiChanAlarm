@@ -24,12 +24,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-g1-dDJ">
                                 <rect key="frame" x="16" y="88" width="343" height="505"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Arf-jo-ARj">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Arf-jo-ARj">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="252.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aichan" translatesAutoresizingMaskIntoConstraints="NO" id="5J9-vu-ddJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="252.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="252.5"/>
                                             </imageView>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-Xu-ddp" customClass="AVPlayerView" customModule="KizunaAiChanAlarm" customModuleProvider="target">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="252.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ayA-wV-sUP">
@@ -197,8 +201,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="aichanImageView" destination="5J9-vu-ddJ" id="BaQ-nV-KX9"/>
                         <outlet property="dataPicker" destination="cdK-0W-l6h" id="yaA-eS-oId"/>
                         <outlet property="setTimeLabel" destination="Fq2-0B-eNy" id="XMW-rm-8PP"/>
+                        <outlet property="videoPlayerView" destination="ISb-Xu-ddp" id="mBJ-WD-fXF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

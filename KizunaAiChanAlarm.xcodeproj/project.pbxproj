@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D676C131F59F57D009575F6 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C121F59F57D009575F6 /* AVPlayerView.swift */; };
+		3D676C1B1F59FCA1009575F6 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */; };
 		C0547BE31F58626800386292 /* hayaoki.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE01F58626800386292 /* hayaoki.m4a */; };
 		C0547BE41F58626800386292 /* snooze.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE11F58626800386292 /* snooze.m4a */; };
 		C0547BE51F58626800386292 /* wakeUp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE21F58626800386292 /* wakeUp.m4a */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D676C121F59F57D009575F6 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		C0547BE01F58626800386292 /* hayaoki.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hayaoki.m4a; sourceTree = "<group>"; };
 		C0547BE11F58626800386292 /* snooze.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = snooze.m4a; sourceTree = "<group>"; };
 		C0547BE21F58626800386292 /* wakeUp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wakeUp.m4a; sourceTree = "<group>"; };
@@ -109,8 +113,10 @@
 				C0547BE11F58626800386292 /* snooze.m4a */,
 				C0547BE21F58626800386292 /* wakeUp.m4a */,
 				C07C8B7D1F4F896600D5AB66 /* default.m4a */,
+				3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */,
 				C0F84F431F4F540F00524848 /* AppDelegate.swift */,
 				C0F84F451F4F540F00524848 /* ViewController.swift */,
+				3D676C121F59F57D009575F6 /* AVPlayerView.swift */,
 				C0F84F471F4F540F00524848 /* Main.storyboard */,
 				C0F84F4A1F4F540F00524848 /* Assets.xcassets */,
 				C0F84F4C1F4F540F00524848 /* LaunchScreen.storyboard */,
@@ -250,6 +256,7 @@
 				C0547BE41F58626800386292 /* snooze.m4a in Resources */,
 				C07C8B7E1F4F896600D5AB66 /* default.m4a in Resources */,
 				C0547BE51F58626800386292 /* wakeUp.m4a in Resources */,
+				3D676C1B1F59FCA1009575F6 /* testVideo.mp4 in Resources */,
 				C0F84F4E1F4F540F00524848 /* LaunchScreen.storyboard in Resources */,
 				C0F84F4B1F4F540F00524848 /* Assets.xcassets in Resources */,
 				C0F84F491F4F540F00524848 /* Main.storyboard in Resources */,
@@ -278,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D676C131F59F57D009575F6 /* AVPlayerView.swift in Sources */,
 				C0F84F461F4F540F00524848 /* ViewController.swift in Sources */,
 				C0F84F441F4F540F00524848 /* AppDelegate.swift in Sources */,
 			);
