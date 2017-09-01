@@ -69,6 +69,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         UIDevice.current.isProximityMonitoringEnabled = true
+        UIApplication.shared.isIdleTimerDisabled = true
         
         //初期化
         setTimeLabel.text = defaultTime
