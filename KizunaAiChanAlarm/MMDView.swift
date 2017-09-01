@@ -9,7 +9,13 @@
 import UIKit
 import SceneKit
 
+protocol MMDViewDelegate: class {
+    func mmdDidTapped()
+}
+
 class MMDView: SCNView {
+    weak var mmdDelegate: MMDViewDelegate?
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
@@ -30,6 +36,9 @@ class MMDView: SCNView {
         cameraNode.eulerAngles = SCNVector3(0 * Float.pi, 0.95 * Float.pi, 0 * Float.pi)
         scene?.rootNode.addChildNode(cameraNode)
 
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapped(_:)))
+        addGestureRecognizer(tapGesture)
+
         let ai = MMDSceneSource(named: "art.scnassets/kizunaai.pmx")!.getModel()!
         let pocky = MMDSceneSource(named: "art.scnassets/pocky.vmd")!.getMotion()!
         pocky.repeatCount = .infinity
@@ -37,5 +46,13 @@ class MMDView: SCNView {
         delegate = MMDIKController.sharedController
 
         scene?.rootNode.addChildNode(ai)
+    }
+
+    func didTapped(_ gesture: UITapGestureRecognizer) {
+        let point = gesture.location(in: self)
+        let hitResult = hitTest(point, options: [:])
+        if hitResult.count > 1 {
+            mmdDelegate?.mmdDidTapped()
+        }
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioPlayerDelegate {
+class ViewController: UIViewController, AVAudioPlayerDelegate, MMDViewDelegate {
     @IBOutlet weak var setTimeLabel: UILabel!
     @IBOutlet weak var dataPicker: UIDatePicker!
     @IBOutlet weak var aichanImageView: UIImageView!
@@ -87,6 +87,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         //時間ごとにupdate()を呼び出すための設定
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         timer.fire()
+
+        mmdView.mmdDelegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,9 +145,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     // 声の再生メソッド
-    func saisei(forResource: String) {
+    func saisei(forResource: String, type: String = "m4a") {
         // 再生する音源のURLを生成
-        let soundFilePath : String = Bundle.main.path(forResource: forResource, ofType: "m4a")!
+        let soundFilePath : String = Bundle.main.path(forResource: forResource, ofType: type)!
         let fileURL : URL = URL(fileURLWithPath: soundFilePath)
         
         do{
@@ -178,6 +180,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         {
             print("遠い")
         }
+    }
+
+    func mmdDidTapped() {
+        saisei(forResource: "自己紹介", type: "mp3")
     }
 }
 
