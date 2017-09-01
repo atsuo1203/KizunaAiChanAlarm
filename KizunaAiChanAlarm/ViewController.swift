@@ -22,8 +22,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
         setTimeLabel.text = defaultTime
+        //セットされている状態でセット解除を押すとき起動
+        if isSetAlarm {
+            saisei(forResource: "hayaoki")
+        }
         resetAll()
-        saisei(forResource: "hayaoki")
         isSetAlarm = false
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
@@ -42,7 +45,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     // アラームがセットされているかどうか
-    var isSetAlarm = false
+    var isSetAlarm = false {
+        didSet {
+            UIDevice.current.isProximityMonitoringEnabled = isSetAlarm
+            UIApplication.shared.isIdleTimerDisabled = isSetAlarm
+        }
+    }
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
     //~分後
@@ -67,6 +75,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         
         //初期化
         setTimeLabel.text = defaultTime
@@ -156,6 +165,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         isWakeUp = false
         isSnoozeCalled = false
         isSetAlarm = false
+    }
+    
+    //近接した時に呼ばれる
+    func proxitySensorStateChanged(){
+        if (UIDevice.current.proximityState == true)
+        {
+            print("近い！")
+        }
+        else
+        {
+            print("遠い")
+        }
     }
 }
 
