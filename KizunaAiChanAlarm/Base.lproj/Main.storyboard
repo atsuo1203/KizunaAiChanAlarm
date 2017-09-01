@@ -27,11 +27,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Arf-jo-ARj">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="252.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aichan" translatesAutoresizingMaskIntoConstraints="NO" id="5J9-vu-ddJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="252.5"/>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aichan" translatesAutoresizingMaskIntoConstraints="NO" id="5J9-vu-ddJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="252.5"/>
                                             </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6D-Pq-Opd" customClass="MMDView" customModule="KizunaAiChanAlarm" customModuleProvider="target">
+                                                <rect key="frame" x="114.5" y="0.0" width="114" height="252.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-Xu-ddp" customClass="AVPlayerView" customModule="KizunaAiChanAlarm" customModuleProvider="target">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="252.5"/>
+                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="252.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -203,6 +207,7 @@
                     <connections>
                         <outlet property="aichanImageView" destination="5J9-vu-ddJ" id="BaQ-nV-KX9"/>
                         <outlet property="dataPicker" destination="cdK-0W-l6h" id="yaA-eS-oId"/>
+                        <outlet property="mmdView" destination="q6D-Pq-Opd" id="zrh-XY-frb"/>
                         <outlet property="setTimeLabel" destination="Fq2-0B-eNy" id="XMW-rm-8PP"/>
                         <outlet property="videoPlayerView" destination="ISb-Xu-ddp" id="mBJ-WD-fXF"/>
                     </connections>

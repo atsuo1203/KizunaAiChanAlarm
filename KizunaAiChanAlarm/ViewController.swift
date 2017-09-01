@@ -14,7 +14,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var dataPicker: UIDatePicker!
     @IBOutlet weak var aichanImageView: UIImageView!
     @IBOutlet weak var videoPlayerView: AVPlayerView!
-
+    @IBOutlet weak var mmdView: MMDView!
+    
     @IBAction func setAlarmButtonPushed(_ sender: UIButton) {
         let format = DateFormatter()
         format.dateFormat = "HH:mm"
@@ -33,11 +34,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         isSetAlarm = false
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
-        if sender.isOn {
-            print("on")
-        } else {
-            print("off")
-        }
+        mmdView.isHidden = !sender.isOn
+        aichanImageView.isHidden = sender.isOn
     }
     @IBAction func snoozeSwitchTaped(_ sender: UISwitch) {
         if sender.isOn {
