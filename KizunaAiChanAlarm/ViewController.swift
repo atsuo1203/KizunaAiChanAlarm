@@ -22,8 +22,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     @IBAction func resetAlarmButtonPushed(_ sender: UIButton) {
         setTimeLabel.text = defaultTime
+        //セットされている状態でセット解除を押すとき起動
+        if isSetAlarm {
+            saisei(forResource: "hayaoki")
+        }
         resetAll()
-        saisei(forResource: "hayaoki")
         isSetAlarm = false
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
