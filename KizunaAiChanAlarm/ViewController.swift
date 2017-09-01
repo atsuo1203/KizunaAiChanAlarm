@@ -54,7 +54,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
     //~分後
-    let snoozeTime = [1,2]
+    let snoozeTime = [3,6,9]
     //スヌーズの時刻 現在時刻 + snoozeTime
     var snoozeClock = [""]
     
@@ -108,7 +108,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             let clock = Date(timeInterval: TimeInterval(time * 60), since: nowTime)
             self.snoozeClock.append(dateForMatter.string(from: clock))
         }
-        print(self.snoozeClock)
     }
     
     //毎回ならす処理
@@ -131,24 +130,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         } else {
             clock = ""
         }
-        print("self.snoozeClock.count 前")
-        print(self.snoozeClock.count)
-        print("clock")
-        print(clock)
         //snooze機能 snooze時刻なおかつ起きてない時に起動 snoozeTimeの個数分呼ばれる
         if nowTime == clock && !isWakeUp && isSetAlarm {
-            print("self.snoozeClock.count 中")
-            print(self.snoozeClock.count)
             //最後だけ別音声鳴らしたい！
             if self.snoozeClock.count == 1 {
-                saisei(forResource: "default")
+                saisei(forResource: "ichiouwakeup")
             } else {
                 saisei(forResource: "snooze")
             }
             self.snoozeClock.removeFirst()
-            clock = ""
-            print("self.snoozeClock.count 後")
-            print(self.snoozeClock.count)
         }
     }
     
@@ -187,18 +177,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         isAlartCalled = false
         isWakeUp = false
         isSetAlarm = false
-    }
-    
-    //近接した時に呼ばれる
-    func proxitySensorStateChanged(){
-        if (UIDevice.current.proximityState == true)
-        {
-            print("近い！")
-        }
-        else
-        {
-            print("遠い")
-        }
     }
 }
 
