@@ -9,9 +9,13 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioPlayerDelegate {
+class ViewController: UIViewController, AVAudioPlayerDelegate, MMDViewDelegate {
     @IBOutlet weak var setTimeLabel: UILabel!
     @IBOutlet weak var dataPicker: UIDatePicker!
+    @IBOutlet weak var aichanImageView: UIImageView!
+    @IBOutlet weak var videoPlayerView: AVPlayerView!
+    @IBOutlet weak var mmdView: MMDView!
+    
     @IBAction func setAlarmButtonPushed(_ sender: UIButton) {
         let format = DateFormatter()
         format.dateFormat = "HH:mm"
@@ -30,11 +34,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         isSetAlarm = false
     }
     @IBAction func modeSwitchTaped(_ sender: UISwitch) {
-        if sender.isOn {
-            print("on")
-        } else {
-            print("off")
-        }
+        mmdView.isHidden = !sender.isOn
+        aichanImageView.isHidden = sender.isOn
     }
     @IBAction func snoozeSwitchTaped(_ sender: UISwitch) {
         if sender.isOn {
@@ -83,6 +84,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         //時間ごとにupdate()を呼び出すための設定
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         timer.fire()
+
+        mmdView.mmdDelegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -155,9 +158,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     // 声の再生メソッド
-    func saisei(forResource: String) {
+    func saisei(forResource: String, type: String = "m4a") {
         // 再生する音源のURLを生成
-        let soundFilePath : String = Bundle.main.path(forResource: forResource, ofType: "m4a")!
+        let soundFilePath : String = Bundle.main.path(forResource: forResource, ofType: type)!
         let fileURL : URL = URL(fileURLWithPath: soundFilePath)
         
         do{
@@ -177,6 +180,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         isAlartCalled = false
         isWakeUp = false
         isSetAlarm = false
+    }
+    func mmdDidTapped() {
+        saisei(forResource: "自己紹介", type: "mp3")
     }
 }
 
