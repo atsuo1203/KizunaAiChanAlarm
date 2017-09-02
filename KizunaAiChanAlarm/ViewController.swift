@@ -54,15 +54,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     //スヌーズをオンにしてるかどうか
     var isSnooze = true
     //~分後
-    let snoozeTime = 2
+    let snoozeTime = [3,6,9]
     //スヌーズの時刻 現在時刻 + snoozeTime
-    var snoozeClock = "--:--"
-    //スヌーズが呼ばれたかどうか
-    var isSnoozeCalled = false
+    var snoozeClock = [""]
     
     //アラートが呼ばれたかどうか
     var isAlartCalled = false
-    
     //アラートのボタンを押した時、起きたとみなす
     var isWakeUp = false
     
@@ -104,9 +101,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         return nowTimeStr
     }
     
+    //snoozeClockを作成していく処理 snoozeTimeの配列分作成される
     func getSnoozeTime(nowTime: Date, dateForMatter: DateFormatter) {
-        let clock = Date(timeInterval: TimeInterval(self.snoozeTime * 60), since: nowTime)
-        self.snoozeClock = dateForMatter.string(from: clock)
+        self.snoozeClock.removeAll()
+        self.snoozeTime.forEach { (time) in
+            let clock = Date(timeInterval: TimeInterval(time * 60), since: nowTime)
+            self.snoozeClock.append(dateForMatter.string(from: clock))
+        }
     }
     
     //毎回ならす処理
@@ -122,10 +123,22 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             saisei(forResource: "default")
             alert()
         }
-        //snooze機能 snooze時刻なおかつ起きてない時に起動
-        if nowTime == self.snoozeClock && !isWakeUp && !isSnoozeCalled && isSetAlarm {
-            saisei(forResource: "snooze")
-            isSnoozeCalled = true
+        //snoozeClockが一つもなくなった時に落ちないための対処
+        var clock = ""
+        if self.snoozeClock.count != 0 {
+            clock = self.snoozeClock[0]
+        } else {
+            clock = ""
+        }
+        //snooze機能 snooze時刻なおかつ起きてない時に起動 snoozeTimeの個数分呼ばれる
+        if nowTime == clock && !isWakeUp && isSetAlarm {
+            //最後だけ別音声鳴らしたい！
+            if self.snoozeClock.count == 1 {
+                saisei(forResource: "ichiouwakeup")
+            } else {
+                saisei(forResource: "snooze")
+            }
+            self.snoozeClock.removeFirst()
         }
     }
     
@@ -163,20 +176,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     func resetAll(){
         isAlartCalled = false
         isWakeUp = false
-        isSnoozeCalled = false
         isSetAlarm = false
-    }
-    
-    //近接した時に呼ばれる
-    func proxitySensorStateChanged(){
-        if (UIDevice.current.proximityState == true)
-        {
-            print("近い！")
-        }
-        else
-        {
-            print("遠い")
-        }
     }
 }
 
