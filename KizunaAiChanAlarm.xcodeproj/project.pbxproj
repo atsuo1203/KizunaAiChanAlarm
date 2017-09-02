@@ -34,6 +34,7 @@
 		3D676C4A1F59FF5D009575F6 /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C341F59FF5D009575F6 /* Regexp.swift */; };
 		3D676C4C1F59FF8B009575F6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4B1F59FF8B009575F6 /* art.scnassets */; };
 		3D676C4E1F5A03FA009575F6 /* 自己紹介.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */; };
+		C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */; };
 		C0547BE31F58626800386292 /* hayaoki.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE01F58626800386292 /* hayaoki.m4a */; };
 		C0547BE41F58626800386292 /* snooze.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE11F58626800386292 /* snooze.m4a */; };
 		C0547BE51F58626800386292 /* wakeUp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE21F58626800386292 /* wakeUp.m4a */; };
@@ -92,6 +93,7 @@
 		3D676C341F59FF5D009575F6 /* Regexp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regexp.swift; sourceTree = "<group>"; };
 		3D676C4B1F59FF8B009575F6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "自己紹介.mp3"; sourceTree = "<group>"; };
+		C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ichiouwakeup.m4a; sourceTree = "<group>"; };
 		C0547BE01F58626800386292 /* hayaoki.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hayaoki.m4a; sourceTree = "<group>"; };
 		C0547BE11F58626800386292 /* snooze.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = snooze.m4a; sourceTree = "<group>"; };
 		C0547BE21F58626800386292 /* wakeUp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wakeUp.m4a; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				3D676C1E1F59FF5D009575F6 /* Common */,
+				C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */,
 				C0547BE01F58626800386292 /* hayaoki.m4a */,
 				C0547BE11F58626800386292 /* snooze.m4a */,
 				C0547BE21F58626800386292 /* wakeUp.m4a */,
@@ -346,6 +349,7 @@
 				C0F84F4E1F4F540F00524848 /* LaunchScreen.storyboard in Resources */,
 				C0F84F4B1F4F540F00524848 /* Assets.xcassets in Resources */,
 				C0F84F491F4F540F00524848 /* Main.storyboard in Resources */,
+				C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */,
 				C0547BE31F58626800386292 /* hayaoki.m4a in Resources */,
 				3D676C3E1F59FF5D009575F6 /* MMDPostShader.plist in Resources */,
 			);
