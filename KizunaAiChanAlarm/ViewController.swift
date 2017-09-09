@@ -147,7 +147,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, MMDViewDelegate {
     
     func alert() {
         self.isAlartCalled = true
-        let alert = UIAlertController(title: "はいどーも！こんにちわ！", message: "バーチャルYouTuberの", preferredStyle: .alert)
+        let alert = UIAlertController(title: "はいどーも！", message: "バーチャルYouTuberの", preferredStyle: .alert)
         let action = UIAlertAction(title: "キズナアイです！", style: .default) { action in
             self.audioPlayer.stop()
             self.isWakeUp = true
