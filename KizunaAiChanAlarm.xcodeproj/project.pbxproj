@@ -35,7 +35,8 @@
 		3D676C4C1F59FF8B009575F6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4B1F59FF8B009575F6 /* art.scnassets */; };
 		3D676C4E1F5A03FA009575F6 /* 自己紹介.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */; };
 		C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */; };
-		C049AC1E1F7021AC001C8073 /* AlarmStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049AC1D1F7021AC001C8073 /* AlarmStoryboard.storyboard */; };
+		C049AC1E1F7021AC001C8073 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049AC1D1F7021AC001C8073 /* Alarm.storyboard */; };
+		C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049AC1F1F7022CC001C8073 /* MainTabController.swift */; };
 		C0547BE31F58626800386292 /* hayaoki.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE01F58626800386292 /* hayaoki.m4a */; };
 		C0547BE41F58626800386292 /* snooze.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE11F58626800386292 /* snooze.m4a */; };
 		C0547BE51F58626800386292 /* wakeUp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE21F58626800386292 /* wakeUp.m4a */; };
@@ -95,7 +96,8 @@
 		3D676C4B1F59FF8B009575F6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "自己紹介.mp3"; sourceTree = "<group>"; };
 		C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ichiouwakeup.m4a; sourceTree = "<group>"; };
-		C049AC1D1F7021AC001C8073 /* AlarmStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmStoryboard.storyboard; sourceTree = "<group>"; };
+		C049AC1D1F7021AC001C8073 /* Alarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
+		C049AC1F1F7022CC001C8073 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		C0547BE01F58626800386292 /* hayaoki.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hayaoki.m4a; sourceTree = "<group>"; };
 		C0547BE11F58626800386292 /* snooze.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = snooze.m4a; sourceTree = "<group>"; };
 		C0547BE21F58626800386292 /* wakeUp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wakeUp.m4a; sourceTree = "<group>"; };
@@ -205,8 +207,9 @@
 				C0F84F451F4F540F00524848 /* ViewController.swift */,
 				3D676C1C1F59FED8009575F6 /* MMDView.swift */,
 				3D676C121F59F57D009575F6 /* AVPlayerView.swift */,
+				C049AC1F1F7022CC001C8073 /* MainTabController.swift */,
 				C0F84F471F4F540F00524848 /* Main.storyboard */,
-				C049AC1D1F7021AC001C8073 /* AlarmStoryboard.storyboard */,
+				C049AC1D1F7021AC001C8073 /* Alarm.storyboard */,
 				C0F84F4A1F4F540F00524848 /* Assets.xcassets */,
 				C0F84F4C1F4F540F00524848 /* LaunchScreen.storyboard */,
 				C0F84F4F1F4F540F00524848 /* Info.plist */,
@@ -347,7 +350,7 @@
 				3D676C4C1F59FF8B009575F6 /* art.scnassets in Resources */,
 				C0547BE41F58626800386292 /* snooze.m4a in Resources */,
 				C07C8B7E1F4F896600D5AB66 /* default.m4a in Resources */,
-				C049AC1E1F7021AC001C8073 /* AlarmStoryboard.storyboard in Resources */,
+				C049AC1E1F7021AC001C8073 /* Alarm.storyboard in Resources */,
 				C0547BE51F58626800386292 /* wakeUp.m4a in Resources */,
 				3D676C1B1F59FCA1009575F6 /* testVideo.mp4 in Resources */,
 				C0F84F4E1F4F540F00524848 /* LaunchScreen.storyboard in Resources */,
@@ -397,6 +400,7 @@
 				3D676C391F59FF5D009575F6 /* MMDNode.swift in Sources */,
 				3D676C3A1F59FF5D009575F6 /* MMDPMDReader.swift in Sources */,
 				3D676C411F59FF5D009575F6 /* MMDSceneSource.swift in Sources */,
+				C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */,
 				3D676C451F59FF5D009575F6 /* MMDShaderModifier.metal in Sources */,
 				3D676C381F59FF5D009575F6 /* MMDIKController.swift in Sources */,
 				3D676C401F59FF5D009575F6 /* MMDReader.swift in Sources */,
