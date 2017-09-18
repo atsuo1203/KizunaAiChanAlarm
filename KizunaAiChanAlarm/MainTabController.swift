@@ -16,7 +16,8 @@ class MainTabController: UITabBarController {
         
         let firstStoryboard = UIStoryboard(name: "Alarm", bundle: nil)
         let firstViewController = firstStoryboard.instantiateInitialViewController()
-        firstViewController?.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.mostRecent, tag: 1)
+        firstViewController?.tabBarItem.image = UIImage(named: "clock_32.png")
+        firstViewController?.tabBarItem.title = "アラーム"
         viewControllers.append(firstViewController!)
         
         let secondViewController = UIViewController()
