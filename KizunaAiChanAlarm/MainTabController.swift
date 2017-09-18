@@ -16,22 +16,19 @@ class MainTabController: UITabBarController {
         
         let firstStoryboard = UIStoryboard(name: "Alarm", bundle: nil)
         let firstViewController = firstStoryboard.instantiateInitialViewController()
-        firstViewController?.tabBarItem.image = UIImage(named: "clock_32.png")
-        firstViewController?.tabBarItem.title = "アラーム"
+        firstViewController?.tabBarItem = UITabBarItem(title: "Alarm", image: UIImage(named: "clock_32.png"), tag: 1)
         viewControllers.append(firstViewController!)
         
         let secondViewController = UIViewController()
-        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.mostViewed, tag: 2)
+        secondViewController.tabBarItem = UITabBarItem(title: "Alarm", image: UIImage(named: "clock_32.png"), tag: 2)
         viewControllers.append(secondViewController)
         
         let thirdViewController = UIViewController()
-        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.contacts, tag: 3)
+        thirdViewController.tabBarItem = UITabBarItem(title: "Alarm", image: UIImage(named: "clock_32.png"), tag: 3)
         viewControllers.append(thirdViewController)
         
         self.setViewControllers(viewControllers, animated: false)
         
-        
-        // なぜか0だけだと選択されないので1にしてから0に
         self.selectedIndex = 1
         self.selectedIndex = 0
         // Do any additional setup after loading the view.
