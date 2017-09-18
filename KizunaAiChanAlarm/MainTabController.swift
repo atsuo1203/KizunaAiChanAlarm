@@ -31,8 +31,6 @@ class MainTabController: UITabBarController {
         
         self.setViewControllers(viewControllers, animated: false)
         
-        self.selectedIndex = 1
-        self.selectedIndex = 0
         // Do any additional setup after loading the view.
     }
 
