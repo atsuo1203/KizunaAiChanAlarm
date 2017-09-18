@@ -22,42 +22,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-g1-dDJ">
-                                <rect key="frame" x="16" y="88" width="343" height="505"/>
+                                <rect key="frame" x="16" y="88" width="343" height="461"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Arf-jo-ARj">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="252.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="230.5"/>
                                         <subviews>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aichan" translatesAutoresizingMaskIntoConstraints="NO" id="5J9-vu-ddJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="252.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="230.5"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6D-Pq-Opd" customClass="MMDView" customModule="KizunaAiChanAlarm" customModuleProvider="target">
-                                                <rect key="frame" x="114.5" y="0.0" width="114" height="252.5"/>
+                                                <rect key="frame" x="114.5" y="0.0" width="114" height="230.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-Xu-ddp" customClass="AVPlayerView" customModule="KizunaAiChanAlarm" customModuleProvider="target">
-                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="252.5"/>
+                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="230.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ayA-wV-sUP">
-                                        <rect key="frame" x="0.0" y="252.5" width="343" height="252.5"/>
+                                        <rect key="frame" x="0.0" y="230.5" width="343" height="230.5"/>
                                         <subviews>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-0W-l6h">
-                                                <rect key="frame" x="0.0" y="0.0" width="247" height="245.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="247" height="230.5"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="525293764.12007099">
                                                     <!--2017-08-24 18:56:04 +0000-->
                                                 </date>
                                             </datePicker>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-7o-QLb">
-                                                <rect key="frame" x="263" y="0.0" width="80" height="245.5"/>
+                                                <rect key="frame" x="263" y="0.0" width="80" height="230.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61H-zl-e2V">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-gM-g0b">
-                                                        <rect key="frame" x="4" y="50" width="72" height="48"/>
+                                                        <rect key="frame" x="4" y="45" width="72" height="48"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="モード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPn-dC-buq">
                                                                 <rect key="frame" x="14.5" y="0.0" width="43" height="13"/>
@@ -78,11 +78,11 @@
                                                         </constraints>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1T-r0-4XY">
-                                                        <rect key="frame" x="0.0" y="98" width="80" height="50"/>
+                                                        <rect key="frame" x="0.0" y="93" width="80" height="45"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kdq-39-aLW">
-                                                        <rect key="frame" x="4" y="148" width="72" height="47.5"/>
+                                                        <rect key="frame" x="4" y="138" width="72" height="47.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="スヌーズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih1-3O-lji">
                                                                 <rect key="frame" x="7.5" y="0.0" width="57.5" height="12.5"/>
@@ -100,7 +100,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xpk-9t-hgX">
-                                                        <rect key="frame" x="0.0" y="195.5" width="80" height="50"/>
+                                                        <rect key="frame" x="0.0" y="185.5" width="80" height="45"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                 </subviews>
@@ -151,7 +151,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nOG-ZN-aJm">
-                                <rect key="frame" x="16" y="609" width="343" height="42"/>
+                                <rect key="frame" x="16" y="565" width="343" height="42"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXx-eb-Phr">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="42"/>
@@ -200,7 +200,7 @@
                             <constraint firstItem="nOG-ZN-aJm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="SVo-3h-m9h"/>
                             <constraint firstItem="nOG-ZN-aJm" firstAttribute="top" secondItem="Cg7-g1-dDJ" secondAttribute="bottom" constant="16" id="Wh3-Nd-6ex"/>
                             <constraint firstItem="5RW-0m-lHa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cKw-F7-NZe"/>
-                            <constraint firstAttribute="bottom" secondItem="nOG-ZN-aJm" secondAttribute="bottom" constant="16" id="kDf-L4-7Zp"/>
+                            <constraint firstAttribute="bottom" secondItem="nOG-ZN-aJm" secondAttribute="bottom" constant="60" id="kDf-L4-7Zp"/>
                             <constraint firstItem="Cg7-g1-dDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="maT-E9-Beg"/>
                         </constraints>
                     </view>
