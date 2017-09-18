@@ -19,13 +19,15 @@ class MainTabController: UITabBarController {
         firstViewController?.tabBarItem = UITabBarItem(title: "Alarm", image: UIImage(named: "clock_32.png"), tag: 1)
         viewControllers.append(firstViewController!)
         
-        let secondViewController = UIViewController()
-        secondViewController.tabBarItem = UITabBarItem(title: "Alarm", image: UIImage(named: "clock_32.png"), tag: 2)
-        viewControllers.append(secondViewController)
+        let secondStoryboard = UIStoryboard(name: "AIChannel", bundle: nil)
+        let secondViewController = secondStoryboard.instantiateInitialViewController()
+        secondViewController?.tabBarItem = UITabBarItem(title: "A.I.chanel", image: UIImage(named: "youtube_32.png"), tag: 2)
+        viewControllers.append(secondViewController!)
         
-        let thirdViewController = UIViewController()
-        thirdViewController.tabBarItem = UITabBarItem(title: "Alarm", image: UIImage(named: "clock_32.png"), tag: 3)
-        viewControllers.append(thirdViewController)
+        let thirdStoryboard = UIStoryboard(name: "Website", bundle: nil)
+        let thirdViewController = thirdStoryboard.instantiateInitialViewController()
+        thirdViewController?.tabBarItem = UITabBarItem(title: "Website", image: UIImage(named: "pc_32.png"), tag: 3)
+        viewControllers.append(thirdViewController!)
         
         self.setViewControllers(viewControllers, animated: false)
         
