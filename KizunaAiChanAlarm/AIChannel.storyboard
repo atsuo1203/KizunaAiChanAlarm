@@ -22,10 +22,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-cI-MvT">
-                                <rect key="frame" x="0.0" y="28" width="375" height="590"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="550"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5t-zk-U56">
+                                <rect key="frame" x="0.0" y="578" width="375" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="triangle_L" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-oP-wbu">
+                                        <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="triangle_R" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-cd-8sA">
+                                        <rect key="frame" x="56" y="8" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reload" translatesAutoresizingMaskIntoConstraints="NO" id="HI3-3B-aEB">
+                                        <rect key="frame" x="100" y="8" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -41,6 +60,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="reload" width="512" height="512"/>
+        <image name="triangle_L" width="256" height="256"/>
+        <image name="triangle_R" width="256" height="256"/>
         <image name="youtube_32" width="32" height="32"/>
     </resources>
 </document>
