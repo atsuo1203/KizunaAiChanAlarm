@@ -16,6 +16,7 @@ class AIChannelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupSwipeGestures()
         loadAddressURL()
     }
 
@@ -30,6 +31,29 @@ class AIChannelViewController: UIViewController {
         webView.loadRequest(request)
     }
     
+    func setupSwipeGestures() {
+        // 右方向へのスワイプ
+        let gestureToRight = UISwipeGestureRecognizer(target: self, action: #selector(self.goBack))
+        gestureToRight.direction = UISwipeGestureRecognizerDirection.right
+        webView.addGestureRecognizer(gestureToRight)
+        
+        // 左方向へのスワイプ
+        let gestureToLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.goForward))
+        gestureToLeft.direction = UISwipeGestureRecognizerDirection.left
+        webView.addGestureRecognizer(gestureToLeft)
+    }
+    
+    func goBack() {
+        if webView.canGoBack {
+            webView.goBack()
+        }
+    }
+    
+    func goForward() {
+        if webView.canGoForward {
+            webView.goForward()
+        }
+    }
 
     /*
     // MARK: - Navigation
