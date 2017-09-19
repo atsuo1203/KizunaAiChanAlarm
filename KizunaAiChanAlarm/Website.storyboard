@@ -12,7 +12,7 @@
         <!--Website-->
         <scene sceneID="P0s-Gq-Ub7">
             <objects>
-                <viewController id="ByO-Bh-LDW" sceneMemberID="viewController">
+                <viewController id="ByO-Bh-LDW" customClass="WebsiteViewController" customModule="KizunaAiChanAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EBz-Tb-bX0"/>
                         <viewControllerLayoutGuide type="bottom" id="eJ8-OZ-50d"/>
@@ -20,14 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="6cS-13-fYY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIV-ir-5Cm">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="Website" image="pc_32" id="n5A-hm-ogO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="ZIV-ir-5Cm" id="9Nq-Ka-xQw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTf-Gv-tD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="163"/>
+            <point key="canvasLocation" x="125.59999999999999" y="162.3688155922039"/>
         </scene>
     </scenes>
     <resources>
