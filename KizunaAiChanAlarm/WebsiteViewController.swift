@@ -11,6 +11,9 @@ import UIKit
 class WebsiteViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var fowardImageView: UIImageView!
+    @IBOutlet weak var reloadImageView: UIImageView!
     
     let targetURL = "https://kizunaai.com"
     

@@ -11,6 +11,10 @@ import UIKit
 class AIChannelViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var fowardImageView: UIImageView!
+    @IBOutlet weak var reloadImageView: UIImageView!
+
     let targetURL = "https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA/feed?activity_view=1"
     
     override func viewDidLoad() {

@@ -51,6 +51,9 @@
                     <tabBarItem key="tabBarItem" tag="3" title="Website" image="pc_32" id="n5A-hm-ogO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="backImageView" destination="nx2-26-Blk" id="Ure-ND-9bo"/>
+                        <outlet property="fowardImageView" destination="hCO-ji-Ay9" id="qVy-94-9oj"/>
+                        <outlet property="reloadImageView" destination="Qxm-c6-KHU" id="jQc-xb-2RW"/>
                         <outlet property="webView" destination="ZIV-ir-5Cm" id="9Nq-Ka-xQw"/>
                     </connections>
                 </viewController>

@@ -51,6 +51,9 @@
                     <tabBarItem key="tabBarItem" tag="2" title="A.I.Channel" image="youtube_32" id="Y8z-2s-KY6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="backImageView" destination="MQJ-oP-wbu" id="98f-sz-p34"/>
+                        <outlet property="fowardImageView" destination="nRt-cd-8sA" id="QSo-mP-Yws"/>
+                        <outlet property="reloadImageView" destination="HI3-3B-aEB" id="ow5-hr-5DV"/>
                         <outlet property="webView" destination="QYj-cI-MvT" id="V6f-R0-aMW"/>
                     </connections>
                 </viewController>
