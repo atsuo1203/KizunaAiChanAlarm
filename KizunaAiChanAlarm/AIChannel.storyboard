@@ -12,7 +12,7 @@
         <!--A.I.Channel-->
         <scene sceneID="wfw-GY-Foj">
             <objects>
-                <viewController id="JAq-9O-ad1" sceneMemberID="viewController">
+                <viewController id="JAq-9O-ad1" customClass="AIChannelViewController" customModule="KizunaAiChanAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O1o-0w-qvQ"/>
                         <viewControllerLayoutGuide type="bottom" id="xXj-El-OEi"/>
@@ -31,6 +31,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="A.I.Channel" image="youtube_32" id="Y8z-2s-KY6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="QYj-cI-MvT" id="V6f-R0-aMW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaT-Og-Xw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
