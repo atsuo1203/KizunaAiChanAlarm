@@ -15,13 +15,13 @@ class AIChannelViewController: UIViewController {
     @IBOutlet weak var fowardImageView: UIImageView!
     @IBOutlet weak var reloadImageView: UIImageView!
 
-    let targetURL = "https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA/feed?activity_view=1"
+    let defaultURL = "https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA/feed?activity_view=1"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupSwipeGestures()
-        loadAddressURL()
+        loadAddressURL(url: defaultURL)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +29,8 @@ class AIChannelViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func loadAddressURL(){
-        guard let requestURL = URL(string: targetURL) else { return }
+    func loadAddressURL(url: String){
+        guard let requestURL = URL(string: url) else { return }
         let request = URLRequest(url: requestURL)
         webView.loadRequest(request)
     }
@@ -66,6 +66,7 @@ class AIChannelViewController: UIViewController {
     }
     
     func reloadRequest(){
+        loadAddressURL(url: webView.stringByEvaluatingJavaScript(from: "document.URL")!)
     }
 
     /*

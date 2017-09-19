@@ -15,13 +15,13 @@ class WebsiteViewController: UIViewController {
     @IBOutlet weak var fowardImageView: UIImageView!
     @IBOutlet weak var reloadImageView: UIImageView!
     
-    let targetURL = "https://kizunaai.com"
+    let defaultURL = "https://kizunaai.com"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupSwipeGestures()
-        loadAddressURL()
+        loadAddressURL(url: defaultURL)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +29,8 @@ class WebsiteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func loadAddressURL(){
-        guard let requestURL = URL(string: targetURL) else { return }
+    func loadAddressURL(url: String){
+        guard let requestURL = URL(string: url) else { return }
         let request = URLRequest(url: requestURL)
         webView.loadRequest(request)
     }
@@ -66,6 +66,7 @@ class WebsiteViewController: UIViewController {
     }
     
     func reloadRequest(){
+        loadAddressURL(url: webView.stringByEvaluatingJavaScript(from: "document.URL")!)
     }
 
     /*
