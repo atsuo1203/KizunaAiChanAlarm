@@ -11,10 +11,13 @@ import UIKit
 class WebsiteViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    
+    let targetURL = "https://kizunaai.com"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        loadAddressURL()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +25,11 @@ class WebsiteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadAddressURL(){
+        guard let requestURL = URL(string: targetURL) else { return }
+        let request = URLRequest(url: requestURL)
+        webView.loadRequest(request)
+    }
 
     /*
     // MARK: - Navigation
