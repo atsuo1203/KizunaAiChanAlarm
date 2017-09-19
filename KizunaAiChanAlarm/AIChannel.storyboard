@@ -12,7 +12,7 @@
         <!--A.I.Channel-->
         <scene sceneID="wfw-GY-Foj">
             <objects>
-                <viewController id="JAq-9O-ad1" sceneMemberID="viewController">
+                <viewController id="JAq-9O-ad1" customClass="AIChannelViewController" customModule="KizunaAiChanAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O1o-0w-qvQ"/>
                         <viewControllerLayoutGuide type="bottom" id="xXj-El-OEi"/>
@@ -20,14 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="Z4q-yo-0L8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-cI-MvT">
+                                <rect key="frame" x="16" y="28" width="343" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="A.I.Channel" image="youtube_32" id="Y8z-2s-KY6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="QYj-cI-MvT" id="V6f-R0-aMW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaT-Og-Xw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="74"/>
+            <point key="canvasLocation" x="96.799999999999997" y="73.313343328335833"/>
         </scene>
     </scenes>
     <resources>
