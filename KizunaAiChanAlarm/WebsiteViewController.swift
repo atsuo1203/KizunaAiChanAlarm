@@ -36,15 +36,21 @@ class WebsiteViewController: UIViewController {
     }
     
     func setupSwipeGestures() {
-        // 右方向へのスワイプ
-        let gestureToRight = UISwipeGestureRecognizer(target: self, action: #selector(self.goBack))
-        gestureToRight.direction = UISwipeGestureRecognizerDirection.right
-        webView.addGestureRecognizer(gestureToRight)
+        //右ボタンにジェスチャー
+        let rightButtonGesture = UITapGestureRecognizer(target: self, action: #selector(self.goForward))
+        fowardImageView.isUserInteractionEnabled = true
+        fowardImageView.addGestureRecognizer(rightButtonGesture)
         
-        // 左方向へのスワイプ
-        let gestureToLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.goForward))
-        gestureToLeft.direction = UISwipeGestureRecognizerDirection.left
-        webView.addGestureRecognizer(gestureToLeft)
+        //左ボタンにジェスチャー
+        let leftButtonGesture = UITapGestureRecognizer(target: self, action: #selector(self.goBack))
+        backImageView.isUserInteractionEnabled = true
+        backImageView.addGestureRecognizer(leftButtonGesture)
+        
+        //リロードボタンにジェスチャー
+        let reloadButtonGesture = UITapGestureRecognizer(target: self, action: #selector(self.reloadRequest))
+        reloadImageView.isUserInteractionEnabled = true
+        reloadImageView.addGestureRecognizer(reloadButtonGesture)
+        
     }
     
     func goBack() {
@@ -57,6 +63,9 @@ class WebsiteViewController: UIViewController {
         if webView.canGoForward {
             webView.goForward()
         }
+    }
+    
+    func reloadRequest(){
     }
 
     /*
