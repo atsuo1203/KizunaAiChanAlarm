@@ -12,7 +12,7 @@
         <!--Website-->
         <scene sceneID="P0s-Gq-Ub7">
             <objects>
-                <viewController id="ByO-Bh-LDW" sceneMemberID="viewController">
+                <viewController id="ByO-Bh-LDW" customClass="WebsiteViewController" customModule="KizunaAiChanAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EBz-Tb-bX0"/>
                         <viewControllerLayoutGuide type="bottom" id="eJ8-OZ-50d"/>
@@ -31,6 +31,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="Website" image="pc_32" id="n5A-hm-ogO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="ZIV-ir-5Cm" id="9Nq-Ka-xQw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTf-Gv-tD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
