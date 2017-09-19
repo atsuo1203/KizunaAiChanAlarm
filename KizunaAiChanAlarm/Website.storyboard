@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Website-->
         <scene sceneID="P0s-Gq-Ub7">
             <objects>
                 <viewController id="ByO-Bh-LDW" sceneMemberID="viewController">
@@ -22,10 +22,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="Website" image="pc_32" id="n5A-hm-ogO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTf-Gv-tD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127" y="163"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pc_32" width="32" height="32"/>
+    </resources>
 </document>

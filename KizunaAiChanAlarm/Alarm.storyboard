@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Alarm-->
         <scene sceneID="fhW-oB-M73">
             <objects>
                 <viewController id="3Au-U0-PcE" customClass="ViewController" customModule="KizunaAiChanAlarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,7 +204,8 @@
                             <constraint firstItem="fBf-dj-w4z" firstAttribute="centerX" secondItem="lqG-v7-w58" secondAttribute="centerX" id="xmm-0l-Lo7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gaR-bm-PFT"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Alarm" image="clock_32" id="wD7-7t-PIV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="aichanImageView" destination="eay-xv-cpC" id="CAt-n9-ych"/>
                         <outlet property="dataPicker" destination="a5T-fz-RJt" id="6M3-fP-r3h"/>
@@ -221,5 +222,6 @@
     <resources>
         <image name="aichan" width="427" height="240"/>
         <image name="button" width="1024" height="410"/>
+        <image name="clock_32" width="32" height="32"/>
     </resources>
 </document>
