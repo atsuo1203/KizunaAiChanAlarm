@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioPlayerDelegate, MMDViewDelegate {
+class AlarmViewController: UIViewController, AVAudioPlayerDelegate, MMDViewDelegate {
     @IBOutlet weak var setTimeLabel: UILabel!
     @IBOutlet weak var dataPicker: UIDatePicker!
     @IBOutlet weak var aichanImageView: UIImageView!

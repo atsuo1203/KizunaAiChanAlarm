@@ -41,16 +41,14 @@
 		C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */; };
 		C049AC1E1F7021AC001C8073 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049AC1D1F7021AC001C8073 /* Alarm.storyboard */; };
 		C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049AC1F1F7022CC001C8073 /* MainTabController.swift */; };
-		C049AC221F702931001C8073 /* AIChannel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049AC211F702931001C8073 /* AIChannel.storyboard */; };
 		C049AC241F702983001C8073 /* Website.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049AC231F702983001C8073 /* Website.storyboard */; };
 		C0547BE31F58626800386292 /* hayaoki.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE01F58626800386292 /* hayaoki.m4a */; };
 		C0547BE41F58626800386292 /* snooze.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE11F58626800386292 /* snooze.m4a */; };
 		C0547BE51F58626800386292 /* wakeUp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0547BE21F58626800386292 /* wakeUp.m4a */; };
 		C07C8B7E1F4F896600D5AB66 /* default.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C07C8B7D1F4F896600D5AB66 /* default.m4a */; };
 		C0CB6C471F710AD700255E78 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6C461F710AD700255E78 /* WebsiteViewController.swift */; };
-		C0CB6C4B1F7112FF00255E78 /* AIChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6C4A1F7112FF00255E78 /* AIChannelViewController.swift */; };
 		C0F84F441F4F540F00524848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F84F431F4F540F00524848 /* AppDelegate.swift */; };
-		C0F84F461F4F540F00524848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F84F451F4F540F00524848 /* ViewController.swift */; };
+		C0F84F461F4F540F00524848 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F84F451F4F540F00524848 /* AlarmViewController.swift */; };
 		C0F84F491F4F540F00524848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F84F471F4F540F00524848 /* Main.storyboard */; };
 		C0F84F4B1F4F540F00524848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F84F4A1F4F540F00524848 /* Assets.xcassets */; };
 		C0F84F4E1F4F540F00524848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F84F4C1F4F540F00524848 /* LaunchScreen.storyboard */; };
@@ -112,17 +110,15 @@
 		C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ichiouwakeup.m4a; sourceTree = "<group>"; };
 		C049AC1D1F7021AC001C8073 /* Alarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
 		C049AC1F1F7022CC001C8073 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
-		C049AC211F702931001C8073 /* AIChannel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AIChannel.storyboard; sourceTree = "<group>"; };
 		C049AC231F702983001C8073 /* Website.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Website.storyboard; sourceTree = "<group>"; };
 		C0547BE01F58626800386292 /* hayaoki.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hayaoki.m4a; sourceTree = "<group>"; };
 		C0547BE11F58626800386292 /* snooze.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = snooze.m4a; sourceTree = "<group>"; };
 		C0547BE21F58626800386292 /* wakeUp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wakeUp.m4a; sourceTree = "<group>"; };
 		C07C8B7D1F4F896600D5AB66 /* default.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.m4a; sourceTree = "<group>"; };
 		C0CB6C461F710AD700255E78 /* WebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
-		C0CB6C4A1F7112FF00255E78 /* AIChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIChannelViewController.swift; sourceTree = "<group>"; };
 		C0F84F401F4F540F00524848 /* KizunaAiChanAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KizunaAiChanAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F84F431F4F540F00524848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0F84F451F4F540F00524848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0F84F451F4F540F00524848 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		C0F84F481F4F540F00524848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0F84F4A1F4F540F00524848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F84F4D1F4F540F00524848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -242,15 +238,13 @@
 				3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */,
 				3D676C4B1F59FF8B009575F6 /* art.scnassets */,
 				C0F84F431F4F540F00524848 /* AppDelegate.swift */,
-				C0F84F451F4F540F00524848 /* ViewController.swift */,
+				C0F84F451F4F540F00524848 /* AlarmViewController.swift */,
 				3D676C1C1F59FED8009575F6 /* MMDView.swift */,
 				3D676C121F59F57D009575F6 /* AVPlayerView.swift */,
 				C049AC1F1F7022CC001C8073 /* MainTabController.swift */,
 				3D3353951F72D4F300591371 /* Util.swift */,
 				C0F84F471F4F540F00524848 /* Main.storyboard */,
 				C049AC1D1F7021AC001C8073 /* Alarm.storyboard */,
-				C049AC211F702931001C8073 /* AIChannel.storyboard */,
-				C0CB6C4A1F7112FF00255E78 /* AIChannelViewController.swift */,
 				C049AC231F702983001C8073 /* Website.storyboard */,
 				C0CB6C461F710AD700255E78 /* WebsiteViewController.swift */,
 				C0F84F4A1F4F540F00524848 /* Assets.xcassets */,
@@ -403,7 +397,6 @@
 				3D676C1B1F59FCA1009575F6 /* testVideo.mp4 in Resources */,
 				C0F84F4E1F4F540F00524848 /* LaunchScreen.storyboard in Resources */,
 				C0F84F4B1F4F540F00524848 /* Assets.xcassets in Resources */,
-				C049AC221F702931001C8073 /* AIChannel.storyboard in Resources */,
 				C0F84F491F4F540F00524848 /* Main.storyboard in Resources */,
 				C049AC241F702983001C8073 /* Website.storyboard in Resources */,
 				C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */,
@@ -491,7 +484,6 @@
 			files = (
 				3D676C131F59F57D009575F6 /* AVPlayerView.swift in Sources */,
 				3D676C361F59FF5D009575F6 /* MMDCameraNode.swift in Sources */,
-				C0CB6C4B1F7112FF00255E78 /* AIChannelViewController.swift in Sources */,
 				3D676C4A1F59FF5D009575F6 /* Regexp.swift in Sources */,
 				3D676C3B1F59FF5D009575F6 /* MMDPMMReader.swift in Sources */,
 				3D676C371F59FF5D009575F6 /* MMDIKConstraint.swift in Sources */,
@@ -503,7 +495,7 @@
 				3D676C491F59FF5D009575F6 /* MMDXReader.swift in Sources */,
 				C0CB6C471F710AD700255E78 /* WebsiteViewController.swift in Sources */,
 				3D676C3F1F59FF5D009575F6 /* MMDProgram.swift in Sources */,
-				C0F84F461F4F540F00524848 /* ViewController.swift in Sources */,
+				C0F84F461F4F540F00524848 /* AlarmViewController.swift in Sources */,
 				3D676C3C1F59FF5D009575F6 /* MMDPMXReader.swift in Sources */,
 				3D676C471F59FF5D009575F6 /* MMDVMDReader.swift in Sources */,
 				3D676C391F59FF5D009575F6 /* MMDNode.swift in Sources */,
