@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class MainTabController: UITabBarController {
 
@@ -25,10 +26,24 @@ class MainTabController: UITabBarController {
         let thirdStoryboard = UIStoryboard(name: "Website", bundle: nil)
         let thirdViewController = thirdStoryboard.instantiateInitialViewController()
         viewControllers.append(thirdViewController!)
+
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = .red
+        let button = UIButton(frame: CGRect(x: 100, y: 200, width: 200, height: 50))
+        button.setTitle("Button", for: .normal)
+        button.addTarget(self, action: #selector(showWebView), for: .touchUpInside)
+        viewController.view.addSubview(button)
+        viewControllers.append(viewController)
         
         self.setViewControllers(viewControllers, animated: false)
         
         // Do any additional setup after loading the view.
+    }
+
+    func showWebView() {
+        let url = URL(string: "https://www.google.com")!
+        let webView = SFSafariViewController(url: url)
+        present(webView, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
