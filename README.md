@@ -7,12 +7,20 @@
 
 ## 機能
 
-* セットした時間になると、キズナアイちゃんの声で起こしてくれる
-* スヌーズ機能
-* mode機能(まだ未実装)
+**タブによって画面を遷移**
 
-### 通常
-<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_3.png" width="320px">
+* Alarm
+* Web
+  - A.I.Channel
+  - A.I.Games
+  - Oficial Website
+* Twitter
 
-### 時間来た時
-<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/alarm_4.png" width="320px">
+### Alarm
+<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/a1.png" width="200px"> → <img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/a2.png" width="200px">
+
+### Web
+<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/a3.png" width="200px"> → <img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/a4.png" width="200px">
+
+### Twitter
+<img src="https://github.com/atsuo1203/KizunaAiChanAlarm/blob/master/a5.png" width="200px">
