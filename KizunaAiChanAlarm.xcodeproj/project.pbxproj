@@ -36,6 +36,7 @@
 		3D676C4E1F5A03FA009575F6 /* 自己紹介.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */; };
 		672339D812AD47EEEFF773BC /* Pods_KizunaAiChanAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C57CDE5B4B1D17ECD2295AE /* Pods_KizunaAiChanAlarm.framework */; };
 		A5453FC21F72A0270085136B /* Twitter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5453FC11F72A0270085136B /* Twitter.storyboard */; };
+		A5453FC41F72B8CF0085136B /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5453FC31F72B8CF0085136B /* TwitterViewController.swift */; };
 		C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */; };
 		C049AC1E1F7021AC001C8073 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049AC1D1F7021AC001C8073 /* Alarm.storyboard */; };
 		C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049AC1F1F7022CC001C8073 /* MainTabController.swift */; };
@@ -105,6 +106,7 @@
 		5D9BF7D0FA76BFBF0AE8CA16 /* Pods-KizunaAiChanAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KizunaAiChanAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KizunaAiChanAlarm/Pods-KizunaAiChanAlarm.debug.xcconfig"; sourceTree = "<group>"; };
 		8C57CDE5B4B1D17ECD2295AE /* Pods_KizunaAiChanAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KizunaAiChanAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5453FC11F72A0270085136B /* Twitter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Twitter.storyboard; sourceTree = "<group>"; };
+		A5453FC31F72B8CF0085136B /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ichiouwakeup.m4a; sourceTree = "<group>"; };
 		C049AC1D1F7021AC001C8073 /* Alarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
 		C049AC1F1F7022CC001C8073 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				C0F84F4C1F4F540F00524848 /* LaunchScreen.storyboard */,
 				C0F84F4F1F4F540F00524848 /* Info.plist */,
 				A5453FC11F72A0270085136B /* Twitter.storyboard */,
+				A5453FC31F72B8CF0085136B /* TwitterViewController.swift */,
 			);
 			path = KizunaAiChanAlarm;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				3D676C3A1F59FF5D009575F6 /* MMDPMDReader.swift in Sources */,
 				3D676C411F59FF5D009575F6 /* MMDSceneSource.swift in Sources */,
 				C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */,
+				A5453FC41F72B8CF0085136B /* TwitterViewController.swift in Sources */,
 				3D676C451F59FF5D009575F6 /* MMDShaderModifier.metal in Sources */,
 				3D676C381F59FF5D009575F6 /* MMDIKController.swift in Sources */,
 				3D676C401F59FF5D009575F6 /* MMDReader.swift in Sources */,

@@ -26,6 +26,10 @@ class MainTabController: UITabBarController {
         let thirdViewController = thirdStoryboard.instantiateInitialViewController()
         viewControllers.append(thirdViewController!)
         
+        let fourthStoryboard = UIStoryboard(name: "Twitter", bundle: nil)
+        let fourthViewController = fourthStoryboard.instantiateInitialViewController()
+        viewControllers.append(fourthViewController!)
+
         self.setViewControllers(viewControllers, animated: false)
         
         // Do any additional setup after loading the view.
