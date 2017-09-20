@@ -34,6 +34,9 @@
 		3D676C4A1F59FF5D009575F6 /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C341F59FF5D009575F6 /* Regexp.swift */; };
 		3D676C4C1F59FF8B009575F6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4B1F59FF8B009575F6 /* art.scnassets */; };
 		3D676C4E1F5A03FA009575F6 /* 自己紹介.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */; };
+		672339D812AD47EEEFF773BC /* Pods_KizunaAiChanAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C57CDE5B4B1D17ECD2295AE /* Pods_KizunaAiChanAlarm.framework */; };
+		A5453FC21F72A0270085136B /* Twitter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5453FC11F72A0270085136B /* Twitter.storyboard */; };
+		A5453FC41F72B8CF0085136B /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5453FC31F72B8CF0085136B /* TwitterViewController.swift */; };
 		C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */; };
 		C049AC1E1F7021AC001C8073 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049AC1D1F7021AC001C8073 /* Alarm.storyboard */; };
 		C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049AC1F1F7022CC001C8073 /* MainTabController.swift */; };
@@ -99,6 +102,11 @@
 		3D676C341F59FF5D009575F6 /* Regexp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regexp.swift; sourceTree = "<group>"; };
 		3D676C4B1F59FF8B009575F6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "自己紹介.mp3"; sourceTree = "<group>"; };
+		43B158293F50417EE447810E /* Pods-KizunaAiChanAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KizunaAiChanAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-KizunaAiChanAlarm/Pods-KizunaAiChanAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		5D9BF7D0FA76BFBF0AE8CA16 /* Pods-KizunaAiChanAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KizunaAiChanAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KizunaAiChanAlarm/Pods-KizunaAiChanAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		8C57CDE5B4B1D17ECD2295AE /* Pods_KizunaAiChanAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KizunaAiChanAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5453FC11F72A0270085136B /* Twitter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Twitter.storyboard; sourceTree = "<group>"; };
+		A5453FC31F72B8CF0085136B /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ichiouwakeup.m4a; sourceTree = "<group>"; };
 		C049AC1D1F7021AC001C8073 /* Alarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
 		C049AC1F1F7022CC001C8073 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672339D812AD47EEEFF773BC /* Pods_KizunaAiChanAlarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +159,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13553DFE302D9CA90ACAF07A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D9BF7D0FA76BFBF0AE8CA16 /* Pods-KizunaAiChanAlarm.debug.xcconfig */,
+				43B158293F50417EE447810E /* Pods-KizunaAiChanAlarm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3D676C1E1F59FF5D009575F6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +197,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		462D890D6F1F266E2234B59F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C57CDE5B4B1D17ECD2295AE /* Pods_KizunaAiChanAlarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0F84F371F4F540F00524848 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +212,8 @@
 				C0F84F571F4F540F00524848 /* KizunaAiChanAlarmTests */,
 				C0F84F621F4F540F00524848 /* KizunaAiChanAlarmUITests */,
 				C0F84F411F4F540F00524848 /* Products */,
+				13553DFE302D9CA90ACAF07A /* Pods */,
+				462D890D6F1F266E2234B59F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +253,8 @@
 				C0F84F4A1F4F540F00524848 /* Assets.xcassets */,
 				C0F84F4C1F4F540F00524848 /* LaunchScreen.storyboard */,
 				C0F84F4F1F4F540F00524848 /* Info.plist */,
+				A5453FC11F72A0270085136B /* Twitter.storyboard */,
+				A5453FC31F72B8CF0085136B /* TwitterViewController.swift */,
 			);
 			path = KizunaAiChanAlarm;
 			sourceTree = "<group>";
@@ -254,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F84F681F4F540F00524848 /* Build configuration list for PBXNativeTarget "KizunaAiChanAlarm" */;
 			buildPhases = (
+				A0112FA3F046A172E7E290C4 /* [CP] Check Pods Manifest.lock */,
 				C0F84F3C1F4F540F00524848 /* Sources */,
 				C0F84F3D1F4F540F00524848 /* Frameworks */,
 				C0F84F3E1F4F540F00524848 /* Resources */,
+				60519D315D130C2B9265DDE7 /* [CP] Embed Pods Frameworks */,
+				02D3FC04BBAE0F8C4248C725 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,6 +406,7 @@
 				C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */,
 				C0547BE31F58626800386292 /* hayaoki.m4a in Resources */,
 				3D676C3E1F59FF5D009575F6 /* MMDPostShader.plist in Resources */,
+				A5453FC21F72A0270085136B /* Twitter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +425,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D3FC04BBAE0F8C4248C725 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KizunaAiChanAlarm/Pods-KizunaAiChanAlarm-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KizunaAiChanAlarm/Pods-KizunaAiChanAlarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60519D315D130C2B9265DDE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KizunaAiChanAlarm/Pods-KizunaAiChanAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0112FA3F046A172E7E290C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KizunaAiChanAlarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0F84F3C1F4F540F00524848 /* Sources */ = {
@@ -417,6 +506,7 @@
 				3D676C3A1F59FF5D009575F6 /* MMDPMDReader.swift in Sources */,
 				3D676C411F59FF5D009575F6 /* MMDSceneSource.swift in Sources */,
 				C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */,
+				A5453FC41F72B8CF0085136B /* TwitterViewController.swift in Sources */,
 				3D676C451F59FF5D009575F6 /* MMDShaderModifier.metal in Sources */,
 				3D676C381F59FF5D009575F6 /* MMDIKController.swift in Sources */,
 				3D676C401F59FF5D009575F6 /* MMDReader.swift in Sources */,
@@ -573,6 +663,7 @@
 		};
 		C0F84F691F4F540F00524848 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9BF7D0FA76BFBF0AE8CA16 /* Pods-KizunaAiChanAlarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79N3F89EVZ;
@@ -586,6 +677,7 @@
 		};
 		C0F84F6A1F4F540F00524848 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B158293F50417EE447810E /* Pods-KizunaAiChanAlarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79N3F89EVZ;
