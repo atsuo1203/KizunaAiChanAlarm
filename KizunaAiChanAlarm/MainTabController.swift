@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class MainTabController: UITabBarController {
 
@@ -14,17 +15,13 @@ class MainTabController: UITabBarController {
         super.viewDidLoad()
         var viewControllers: [UIViewController] = []
         
-        let firstStoryboard = UIStoryboard(name: "Alarm", bundle: nil)
-        let firstViewController = firstStoryboard.instantiateInitialViewController()
-        viewControllers.append(firstViewController!)
+        let alarmStoryboard = UIStoryboard(name: "Alarm", bundle: nil)
+        let alarmViewController = alarmStoryboard.instantiateInitialViewController()
+        viewControllers.append(alarmViewController!)
         
-        let secondStoryboard = UIStoryboard(name: "AIChannel", bundle: nil)
-        let secondViewController = secondStoryboard.instantiateInitialViewController()
-        viewControllers.append(secondViewController!)
-        
-        let thirdStoryboard = UIStoryboard(name: "Website", bundle: nil)
-        let thirdViewController = thirdStoryboard.instantiateInitialViewController()
-        viewControllers.append(thirdViewController!)
+        let webStoryboard = UIStoryboard(name: "Website", bundle: nil)
+        let webViewController = webStoryboard.instantiateInitialViewController()
+        viewControllers.append(webViewController!)
         
         let fourthStoryboard = UIStoryboard(name: "Twitter", bundle: nil)
         let fourthViewController = fourthStoryboard.instantiateInitialViewController()
@@ -33,6 +30,12 @@ class MainTabController: UITabBarController {
         self.setViewControllers(viewControllers, animated: false)
         
         // Do any additional setup after loading the view.
+    }
+
+    func showWebView() {
+        let url = URL(string: "https://www.google.com")!
+        let webView = SFSafariViewController(url: url)
+        present(webView, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
