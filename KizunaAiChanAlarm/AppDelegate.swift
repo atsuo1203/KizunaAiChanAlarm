@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Twitter.sharedInstance().start(withConsumerKey:"QqgUtjG7jT6Pa0NRT3ofWuaAy", consumerSecret:"H5CPnfarsSnwuD9myXLGo8UGsP08hht986VNOk7gl5ccZNGiwV")
 
+		UINavigationBar.appearance().barTintColor = UIColor.AI.ribbon
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().tintColor = .white
+        
         return true
     }
 

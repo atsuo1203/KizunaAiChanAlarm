@@ -14,18 +14,24 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var viewControllers: [UIViewController] = []
+
+        let firstStoryboard = UIStoryboard(name: "Alarm", bundle: nil)
+        let firstViewController = firstStoryboard.instantiateInitialViewController()!
+        firstViewController.title = "Alarm"
+        let navigationControllerFirst = UINavigationController(rootViewController: firstViewController)
+        viewControllers.append(navigationControllerFirst)
         
-        let alarmStoryboard = UIStoryboard(name: "Alarm", bundle: nil)
-        let alarmViewController = alarmStoryboard.instantiateInitialViewController()
-        viewControllers.append(alarmViewController!)
+        let secondStoryboard = UIStoryboard(name: "Website", bundle: nil)
+        let secondViewController = secondStoryboard.instantiateInitialViewController()!
+        secondViewController.title = "Website"
+        let navigationControllerSecond = UINavigationController(rootViewController: secondViewController)
+        viewControllers.append(navigationControllerSecond)
         
-        let webStoryboard = UIStoryboard(name: "Website", bundle: nil)
-        let webViewController = webStoryboard.instantiateInitialViewController()
-        viewControllers.append(webViewController!)
-        
-        let fourthStoryboard = UIStoryboard(name: "Twitter", bundle: nil)
-        let fourthViewController = fourthStoryboard.instantiateInitialViewController()
-        viewControllers.append(fourthViewController!)
+        let thirdStoryboard = UIStoryboard(name: "Twitter", bundle: nil)
+        let thirdViewController = thirdStoryboard.instantiateInitialViewController()!
+        thirdViewController.title = "Twitter"
+        let navigationControllerThird = UINavigationController(rootViewController: thirdViewController)
+        viewControllers.append(navigationControllerThird)
 
         self.setViewControllers(viewControllers, animated: false)
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3353961F72D4F300591371 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3353951F72D4F300591371 /* Util.swift */; };
 		3D676C131F59F57D009575F6 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C121F59F57D009575F6 /* AVPlayerView.swift */; };
 		3D676C1B1F59FCA1009575F6 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */; };
 		3D676C1D1F59FED8009575F6 /* MMDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C1C1F59FED8009575F6 /* MMDView.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D3353951F72D4F300591371 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		3D676C121F59F57D009575F6 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		3D676C1C1F59FED8009575F6 /* MMDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDView.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				3D676C1C1F59FED8009575F6 /* MMDView.swift */,
 				3D676C121F59F57D009575F6 /* AVPlayerView.swift */,
 				C049AC1F1F7022CC001C8073 /* MainTabController.swift */,
+				3D3353951F72D4F300591371 /* Util.swift */,
 				C0F84F471F4F540F00524848 /* Main.storyboard */,
 				C049AC1D1F7021AC001C8073 /* Alarm.storyboard */,
 				C049AC211F702931001C8073 /* AIChannel.storyboard */,
@@ -492,6 +495,7 @@
 				3D676C4A1F59FF5D009575F6 /* Regexp.swift in Sources */,
 				3D676C3B1F59FF5D009575F6 /* MMDPMMReader.swift in Sources */,
 				3D676C371F59FF5D009575F6 /* MMDIKConstraint.swift in Sources */,
+				3D3353961F72D4F300591371 /* Util.swift in Sources */,
 				3D676C461F59FF5D009575F6 /* MMDVACReader.swift in Sources */,
 				3D676C3D1F59FF5D009575F6 /* MMDPostShader.metal in Sources */,
 				3D676C351F59FF5D009575F6 /* CommonTypes.swift in Sources */,
