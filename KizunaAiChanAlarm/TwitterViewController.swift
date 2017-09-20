@@ -14,8 +14,8 @@ class TwitterViewController: TWTRTimelineViewController {
         super.viewDidLoad()
         
         let client = TWTRAPIClient()
-        self.dataSource = TWTRUserTimelineDataSource(screenName: "aichan_nel", apiClient:client)
-       // dataSource.includeReplies = true
+        self.dataSource = TWTRUserTimelineDataSource(screenName: "aichan_nel", userID: nil, apiClient: client, maxTweetsPerRequest:30,
+                                                    includeReplies: false, includeRetweets: false)
 
     }
 }
