@@ -60,7 +60,7 @@
                                             <constraint firstAttribute="height" constant="80" id="g9C-Wq-8Om"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
-                                        <state key="normal" title="Oficial Website" backgroundImage="button">
+                                        <state key="normal" title="Official Website" backgroundImage="button">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
