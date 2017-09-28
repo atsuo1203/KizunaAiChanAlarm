@@ -36,11 +36,11 @@
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="aichannelButtonTapped:" destination="ByO-Bh-LDW" eventType="touchUpInside" id="9mX-Xo-e8p"/>
+                                            <action selector="websiteButtonTapped:" destination="ByO-Bh-LDW" eventType="touchUpInside" id="p8e-nO-VjU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jc-28-SBy">
-                                        <rect key="frame" x="51.5" y="179" width="240" height="80"/>
+                                        <rect key="frame" x="51.5" y="119.5" width="240" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="3xB-jb-Tut"/>
                                             <constraint firstAttribute="width" constant="240" id="DZE-PO-VOd"/>
@@ -50,21 +50,35 @@
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="aiGamesButtonTapped:" destination="ByO-Bh-LDW" eventType="touchUpInside" id="abS-O5-8fF"/>
+                                            <action selector="websiteButtonTapped:" destination="ByO-Bh-LDW" eventType="touchUpInside" id="Ofl-2i-Y4u"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ln9-6z-SPR">
-                                        <rect key="frame" x="51.5" y="358" width="240" height="80"/>
+                                        <rect key="frame" x="51.5" y="238.5" width="240" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="RIn-Uc-mTu"/>
                                             <constraint firstAttribute="height" constant="80" id="g9C-Wq-8Om"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
+                                        <state key="normal" title="A.I.GamersInfo" backgroundImage="button">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="websiteButtonTapped:" destination="ByO-Bh-LDW" eventType="touchUpInside" id="nFR-0C-k2h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7I-IK-K2r">
+                                        <rect key="frame" x="51.5" y="358" width="240" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="LUJ-mI-fCa"/>
+                                            <constraint firstAttribute="height" constant="80" id="wd6-bt-qik"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
                                         <state key="normal" title="Official Website" backgroundImage="button">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="websiteButtonTapped:" destination="ByO-Bh-LDW" eventType="touchUpInside" id="EMZ-UE-Vla"/>
+                                            <action selector="websiteButtonTapped:" destination="ByO-Bh-LDW" eventType="touchUpInside" id="Smk-XW-3GK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -80,6 +94,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="Website" image="pc_32" id="n5A-hm-ogO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="aichannelButton" destination="Epu-y7-zhl" id="Pm3-wM-4DI"/>
+                        <outlet property="aigamersinfoButton" destination="Ln9-6z-SPR" id="IO9-wt-b2X"/>
+                        <outlet property="aigamesButton" destination="0Jc-28-SBy" id="TEl-ah-f6w"/>
+                        <outlet property="officialwebsiteButton" destination="u7I-IK-K2r" id="FtF-hj-Xvg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTf-Gv-tD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

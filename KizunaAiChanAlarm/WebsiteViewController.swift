@@ -10,15 +10,25 @@ import UIKit
 import SafariServices
 
 class WebsiteViewController: UIViewController {
-    
-    @IBAction func aichannelButtonTapped(_ sender: UIButton) {
-        showWebView(targetURL: "https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA/feed?activity_view=1")
-    }
-    @IBAction func aiGamesButtonTapped(_ sender: UIButton) {
-        showWebView(targetURL: "https://www.youtube.com/channel/UCbFwe3COkDrbNsbMyGNCsDg/feed?activity_view=1")
-    }
+
+    @IBOutlet weak var aichannelButton: UIButton!
+    @IBOutlet weak var aigamesButton: UIButton!
+    @IBOutlet weak var aigamersinfoButton: UIButton!
+    @IBOutlet weak var officialwebsiteButton: UIButton!
+
     @IBAction func websiteButtonTapped(_ sender: UIButton) {
-        showWebView(targetURL: "https://kizunaai.com/")
+        var url = ""
+        switch sender {
+        case aichannelButton:
+            url = "https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA"
+        case aigamesButton:
+            url = "https://www.youtube.com/channel/UCbFwe3COkDrbNsbMyGNCsDg"
+        case aigamersinfoButton:
+            url = "https://www.aigamers.info/"
+        default:
+            url = "https://kizunaai.com/"
+        }
+        showWebView(targetURL: url)
     }
     
     override func viewDidLoad() {
