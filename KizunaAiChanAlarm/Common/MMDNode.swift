@@ -604,18 +604,18 @@ open class MMDNode: SCNNode, MMDNodeProgramDelegate {
         return newGroup
     }
     
-    override open func addAnimation(_ animation: CAAnimation, forKey key: String?) {
-        if let group = animation as? CAAnimationGroup {
-            // FIXME: clone values
-            let convertedAnimation = self.convertAnimation(group)
-            convertedAnimation.delegate = self
-            super.addAnimation(convertedAnimation, forKey: key)
-        }else{
-            // not CAAnimationGroup: just call the superclass
-            animation.delegate = self
-            super.addAnimation(animation, forKey: key)
-        }
-    }
+//    override open func addAnimation(_ animation: CAAnimation, forKey key: String?) {
+//        if let group = animation as? CAAnimationGroup {
+//            // FIXME: clone values
+//            let convertedAnimation = self.convertAnimation(group)
+//            convertedAnimation.delegate = self
+//            super.addAnimation(convertedAnimation, forKey: key)
+//        }else{
+//            // not CAAnimationGroup: just call the superclass
+//            animation.delegate = self
+//            super.addAnimation(animation, forKey: key)
+//        }
+//    }
 #endif
     
     /**
