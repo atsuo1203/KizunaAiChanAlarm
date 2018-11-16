@@ -38,14 +38,6 @@ class MMDView: SCNView {
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapped(_:)))
         addGestureRecognizer(tapGesture)
-
-        let ai = MMDSceneSource(named: "art.scnassets/kizunaai.pmx")!.getModel()!
-        let pocky = MMDSceneSource(named: "art.scnassets/pocky.vmd")!.getMotion()!
-        pocky.repeatCount = .infinity
-        ai.addAnimation(pocky, forKey: "pocky")
-        delegate = MMDIKController.sharedController
-
-        scene?.rootNode.addChildNode(ai)
     }
 
     func didTapped(_ gesture: UITapGestureRecognizer) {

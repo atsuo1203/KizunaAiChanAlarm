@@ -11,28 +11,6 @@
 		3D676C131F59F57D009575F6 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C121F59F57D009575F6 /* AVPlayerView.swift */; };
 		3D676C1B1F59FCA1009575F6 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */; };
 		3D676C1D1F59FED8009575F6 /* MMDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C1C1F59FED8009575F6 /* MMDView.swift */; };
-		3D676C351F59FF5D009575F6 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C1F1F59FF5D009575F6 /* CommonTypes.swift */; };
-		3D676C361F59FF5D009575F6 /* MMDCameraNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C201F59FF5D009575F6 /* MMDCameraNode.swift */; };
-		3D676C371F59FF5D009575F6 /* MMDIKConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C211F59FF5D009575F6 /* MMDIKConstraint.swift */; };
-		3D676C381F59FF5D009575F6 /* MMDIKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C221F59FF5D009575F6 /* MMDIKController.swift */; };
-		3D676C391F59FF5D009575F6 /* MMDNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C231F59FF5D009575F6 /* MMDNode.swift */; };
-		3D676C3A1F59FF5D009575F6 /* MMDPMDReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C241F59FF5D009575F6 /* MMDPMDReader.swift */; };
-		3D676C3B1F59FF5D009575F6 /* MMDPMMReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C251F59FF5D009575F6 /* MMDPMMReader.swift */; };
-		3D676C3C1F59FF5D009575F6 /* MMDPMXReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C261F59FF5D009575F6 /* MMDPMXReader.swift */; };
-		3D676C3D1F59FF5D009575F6 /* MMDPostShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C271F59FF5D009575F6 /* MMDPostShader.metal */; };
-		3D676C3E1F59FF5D009575F6 /* MMDPostShader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C281F59FF5D009575F6 /* MMDPostShader.plist */; };
-		3D676C3F1F59FF5D009575F6 /* MMDProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C291F59FF5D009575F6 /* MMDProgram.swift */; };
-		3D676C401F59FF5D009575F6 /* MMDReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C2A1F59FF5D009575F6 /* MMDReader.swift */; };
-		3D676C411F59FF5D009575F6 /* MMDSceneSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C2B1F59FF5D009575F6 /* MMDSceneSource.swift */; };
-		3D676C421F59FF5D009575F6 /* MMDShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C2C1F59FF5D009575F6 /* MMDShader.metal */; };
-		3D676C431F59FF5D009575F6 /* MMDShader.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C2D1F59FF5D009575F6 /* MMDShader.plist */; };
-		3D676C441F59FF5D009575F6 /* MMDShader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C2E1F59FF5D009575F6 /* MMDShader.swift */; };
-		3D676C451F59FF5D009575F6 /* MMDShaderModifier.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C2F1F59FF5D009575F6 /* MMDShaderModifier.metal */; };
-		3D676C461F59FF5D009575F6 /* MMDVACReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C301F59FF5D009575F6 /* MMDVACReader.swift */; };
-		3D676C471F59FF5D009575F6 /* MMDVMDReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C311F59FF5D009575F6 /* MMDVMDReader.swift */; };
-		3D676C481F59FF5D009575F6 /* MMDVPDReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C321F59FF5D009575F6 /* MMDVPDReader.swift */; };
-		3D676C491F59FF5D009575F6 /* MMDXReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C331F59FF5D009575F6 /* MMDXReader.swift */; };
-		3D676C4A1F59FF5D009575F6 /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D676C341F59FF5D009575F6 /* Regexp.swift */; };
 		3D676C4C1F59FF8B009575F6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4B1F59FF8B009575F6 /* art.scnassets */; };
 		3D676C4E1F5A03FA009575F6 /* 自己紹介.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */; };
 		672339D812AD47EEEFF773BC /* Pods_KizunaAiChanAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C57CDE5B4B1D17ECD2295AE /* Pods_KizunaAiChanAlarm.framework */; };
@@ -78,28 +56,6 @@
 		3D676C121F59F57D009575F6 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		3D676C1A1F59FCA1009575F6 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		3D676C1C1F59FED8009575F6 /* MMDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDView.swift; sourceTree = "<group>"; };
-		3D676C1F1F59FF5D009575F6 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
-		3D676C201F59FF5D009575F6 /* MMDCameraNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDCameraNode.swift; sourceTree = "<group>"; };
-		3D676C211F59FF5D009575F6 /* MMDIKConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDIKConstraint.swift; sourceTree = "<group>"; };
-		3D676C221F59FF5D009575F6 /* MMDIKController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDIKController.swift; sourceTree = "<group>"; };
-		3D676C231F59FF5D009575F6 /* MMDNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDNode.swift; sourceTree = "<group>"; };
-		3D676C241F59FF5D009575F6 /* MMDPMDReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDPMDReader.swift; sourceTree = "<group>"; };
-		3D676C251F59FF5D009575F6 /* MMDPMMReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDPMMReader.swift; sourceTree = "<group>"; };
-		3D676C261F59FF5D009575F6 /* MMDPMXReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDPMXReader.swift; sourceTree = "<group>"; };
-		3D676C271F59FF5D009575F6 /* MMDPostShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MMDPostShader.metal; sourceTree = "<group>"; };
-		3D676C281F59FF5D009575F6 /* MMDPostShader.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MMDPostShader.plist; sourceTree = "<group>"; };
-		3D676C291F59FF5D009575F6 /* MMDProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDProgram.swift; sourceTree = "<group>"; };
-		3D676C2A1F59FF5D009575F6 /* MMDReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDReader.swift; sourceTree = "<group>"; };
-		3D676C2B1F59FF5D009575F6 /* MMDSceneSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDSceneSource.swift; sourceTree = "<group>"; };
-		3D676C2C1F59FF5D009575F6 /* MMDShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MMDShader.metal; sourceTree = "<group>"; };
-		3D676C2D1F59FF5D009575F6 /* MMDShader.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MMDShader.plist; sourceTree = "<group>"; };
-		3D676C2E1F59FF5D009575F6 /* MMDShader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDShader.swift; sourceTree = "<group>"; };
-		3D676C2F1F59FF5D009575F6 /* MMDShaderModifier.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MMDShaderModifier.metal; sourceTree = "<group>"; };
-		3D676C301F59FF5D009575F6 /* MMDVACReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDVACReader.swift; sourceTree = "<group>"; };
-		3D676C311F59FF5D009575F6 /* MMDVMDReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDVMDReader.swift; sourceTree = "<group>"; };
-		3D676C321F59FF5D009575F6 /* MMDVPDReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDVPDReader.swift; sourceTree = "<group>"; };
-		3D676C331F59FF5D009575F6 /* MMDXReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDXReader.swift; sourceTree = "<group>"; };
-		3D676C341F59FF5D009575F6 /* Regexp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regexp.swift; sourceTree = "<group>"; };
 		3D676C4B1F59FF8B009575F6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3D676C4D1F5A03FA009575F6 /* 自己紹介.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "自己紹介.mp3"; sourceTree = "<group>"; };
 		43B158293F50417EE447810E /* Pods-KizunaAiChanAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KizunaAiChanAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-KizunaAiChanAlarm/Pods-KizunaAiChanAlarm.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,35 +122,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3D676C1E1F59FF5D009575F6 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				3D676C1F1F59FF5D009575F6 /* CommonTypes.swift */,
-				3D676C201F59FF5D009575F6 /* MMDCameraNode.swift */,
-				3D676C211F59FF5D009575F6 /* MMDIKConstraint.swift */,
-				3D676C221F59FF5D009575F6 /* MMDIKController.swift */,
-				3D676C231F59FF5D009575F6 /* MMDNode.swift */,
-				3D676C241F59FF5D009575F6 /* MMDPMDReader.swift */,
-				3D676C251F59FF5D009575F6 /* MMDPMMReader.swift */,
-				3D676C261F59FF5D009575F6 /* MMDPMXReader.swift */,
-				3D676C271F59FF5D009575F6 /* MMDPostShader.metal */,
-				3D676C281F59FF5D009575F6 /* MMDPostShader.plist */,
-				3D676C291F59FF5D009575F6 /* MMDProgram.swift */,
-				3D676C2A1F59FF5D009575F6 /* MMDReader.swift */,
-				3D676C2B1F59FF5D009575F6 /* MMDSceneSource.swift */,
-				3D676C2C1F59FF5D009575F6 /* MMDShader.metal */,
-				3D676C2D1F59FF5D009575F6 /* MMDShader.plist */,
-				3D676C2E1F59FF5D009575F6 /* MMDShader.swift */,
-				3D676C2F1F59FF5D009575F6 /* MMDShaderModifier.metal */,
-				3D676C301F59FF5D009575F6 /* MMDVACReader.swift */,
-				3D676C311F59FF5D009575F6 /* MMDVMDReader.swift */,
-				3D676C321F59FF5D009575F6 /* MMDVPDReader.swift */,
-				3D676C331F59FF5D009575F6 /* MMDXReader.swift */,
-				3D676C341F59FF5D009575F6 /* Regexp.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		462D890D6F1F266E2234B59F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +155,6 @@
 		C0F84F421F4F540F00524848 /* KizunaAiChanAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				3D676C1E1F59FF5D009575F6 /* Common */,
 				C03A92C51F59C81E00A69663 /* ichiouwakeup.m4a */,
 				C0547BE01F58626800386292 /* hayaoki.m4a */,
 				C0547BE11F58626800386292 /* snooze.m4a */,
@@ -345,7 +271,7 @@
 				TargetAttributes = {
 					C0F84F3F1F4F540F00524848 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 79N3F89EVZ;
+						DevelopmentTeam = Z793E54W8T;
 						ProvisioningStyle = Automatic;
 					};
 					C0F84F531F4F540F00524848 = {
@@ -387,7 +313,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D676C431F59FF5D009575F6 /* MMDShader.plist in Resources */,
 				3D676C4E1F5A03FA009575F6 /* 自己紹介.mp3 in Resources */,
 				3D676C4C1F59FF8B009575F6 /* art.scnassets in Resources */,
 				C0547BE41F58626800386292 /* snooze.m4a in Resources */,
@@ -401,7 +326,6 @@
 				C049AC241F702983001C8073 /* Website.storyboard in Resources */,
 				C03A92C61F59C81E00A69663 /* ichiouwakeup.m4a in Resources */,
 				C0547BE31F58626800386292 /* hayaoki.m4a in Resources */,
-				3D676C3E1F59FF5D009575F6 /* MMDPostShader.plist in Resources */,
 				A5453FC21F72A0270085136B /* Twitter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,32 +407,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D676C131F59F57D009575F6 /* AVPlayerView.swift in Sources */,
-				3D676C361F59FF5D009575F6 /* MMDCameraNode.swift in Sources */,
-				3D676C4A1F59FF5D009575F6 /* Regexp.swift in Sources */,
-				3D676C3B1F59FF5D009575F6 /* MMDPMMReader.swift in Sources */,
-				3D676C371F59FF5D009575F6 /* MMDIKConstraint.swift in Sources */,
 				3D3353961F72D4F300591371 /* Util.swift in Sources */,
-				3D676C461F59FF5D009575F6 /* MMDVACReader.swift in Sources */,
-				3D676C3D1F59FF5D009575F6 /* MMDPostShader.metal in Sources */,
-				3D676C351F59FF5D009575F6 /* CommonTypes.swift in Sources */,
 				3D676C1D1F59FED8009575F6 /* MMDView.swift in Sources */,
-				3D676C491F59FF5D009575F6 /* MMDXReader.swift in Sources */,
 				C0CB6C471F710AD700255E78 /* WebsiteViewController.swift in Sources */,
-				3D676C3F1F59FF5D009575F6 /* MMDProgram.swift in Sources */,
 				C0F84F461F4F540F00524848 /* AlarmViewController.swift in Sources */,
-				3D676C3C1F59FF5D009575F6 /* MMDPMXReader.swift in Sources */,
-				3D676C471F59FF5D009575F6 /* MMDVMDReader.swift in Sources */,
-				3D676C391F59FF5D009575F6 /* MMDNode.swift in Sources */,
-				3D676C3A1F59FF5D009575F6 /* MMDPMDReader.swift in Sources */,
-				3D676C411F59FF5D009575F6 /* MMDSceneSource.swift in Sources */,
 				C049AC201F7022CC001C8073 /* MainTabController.swift in Sources */,
 				A5453FC41F72B8CF0085136B /* TwitterViewController.swift in Sources */,
-				3D676C451F59FF5D009575F6 /* MMDShaderModifier.metal in Sources */,
-				3D676C381F59FF5D009575F6 /* MMDIKController.swift in Sources */,
-				3D676C401F59FF5D009575F6 /* MMDReader.swift in Sources */,
-				3D676C481F59FF5D009575F6 /* MMDVPDReader.swift in Sources */,
-				3D676C441F59FF5D009575F6 /* MMDShader.swift in Sources */,
-				3D676C421F59FF5D009575F6 /* MMDShader.metal in Sources */,
 				C0F84F441F4F540F00524848 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,11 +566,12 @@
 			baseConfigurationReference = 5D9BF7D0FA76BFBF0AE8CA16 /* Pods-KizunaAiChanAlarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 79N3F89EVZ;
+				DEVELOPMENT_TEAM = Z793E54W8T;
 				INFOPLIST_FILE = KizunaAiChanAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cps.ARTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KizunaAiChanAlarm;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -676,11 +581,12 @@
 			baseConfigurationReference = 43B158293F50417EE447810E /* Pods-KizunaAiChanAlarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 79N3F89EVZ;
+				DEVELOPMENT_TEAM = Z793E54W8T;
 				INFOPLIST_FILE = KizunaAiChanAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cps.ARTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KizunaAiChanAlarm;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
